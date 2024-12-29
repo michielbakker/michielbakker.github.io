@@ -105,13 +105,13 @@ papers:
     authors: "Mohamed H. Abobeih, Joe Randall, Conor E. Bradley, Hans P. Bartling, <b>Michiel A. Bakker</b>, Maarten J. Degen, Mark Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Nature. 2019."
     paper_pdf: "https://www.nature.com/articles/s41586-019-1834-7"
-    selected: y
+    selected: n
 
   - title: "A 10-qubit solid-state spin register with quantum memory up to one minute"
     authors: "Conor E. Bradley, Joe Randall, Mohamed H. Abobeih, Remon C. Berrevoets, Maarten J. Degen, <b>Michiel A. Bakker</b>, Mark Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Physical Review X. 2019."
     paper_pdf: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.031045"
-    selected: y
+    selected: n
 
   - title: "Measuring fine-grained multidimensional integration using mobile phone metadata: the case of Syrian refugees in Turkey"
     authors: "<b>Michiel A. Bakker</b>, Daoud A. Piracha, Patricia J. Lu, Keis Bejgo, Mohsen Bahrami, Yan Leng, Jose Balsa-Barreiro, Julie Ricard, Alfredo J.Morales, Vivek K. Singh, Burcin Bozkaya, Selim Balcisoy, Alex Pentland"
@@ -159,7 +159,7 @@ papers:
     authors: "Harry van der Graaf, <b>Michiel A. Bakker</b>, Hong W. Chan, Eduardo Charbon, Fabio Santagata, Pasqualina M. Sarro, Dennis R. Schaart"
     venue: "Journal of Instrumentation. 2013."
     paper_pdf: "http://iopscience.iop.org/article/10.1088/1748-0221/8/01/C01036/meta"
-    selected: y
+    selected: n
 
 
 
