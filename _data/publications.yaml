@@ -13,7 +13,7 @@ papers:
     selected: y
 
   - title: "AI can help humans find common ground in democratic deliberation"
-    authors: "Michael Henry Tessler*, <b>Michiel A. Bakker*</b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
+    authors: "Michael Henry Tessler<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
     venue: "Science. 2024."
     paper_pdf: "https://www.science.org/stoken/author-tokens/ST-2196/full"
     selected: y
@@ -49,7 +49,7 @@ papers:
     selected: y
 
   - title: "Fine-tuning language models to find agreement among humans with diverse preferences"
-    authors: "<b>Michiel A. Bakker*</b>, Martin J. Chadwick*, Hannah R. Sheahan*, Michael Henry Tessler, Lucy Campbell-Gillingham, Jan Balaguer, Nat McAleese, Amelia Glaese, John Aslanides, Matthew M. Botvinick, Christopher Summerfield"
+    authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Martin J. Chadwick<sup>‡</sup>, Hannah R. Sheahan<sup>‡</sup>, Michael Henry Tessler, Lucy Campbell-Gillingham, Jan Balaguer, Nat McAleese, Amelia Glaese, John Aslanides, Matthew M. Botvinick, Christopher Summerfield"
     venue: "NeurIPS'22: Advances in Neural Information Processing Systems. 2022."
     paper_pdf: "https://arxiv.org/abs/2211.15006"
     selected: y
@@ -61,7 +61,7 @@ papers:
     selected: n
 
   - title: "Modelling Cooperation in Network Games with Spatio-Temporal Complexity"
-    authors: "<b>Michiel A. Bakker*</b>, Richard Everett*, Laura Weidinger, Iason Gabriel, William S. Isaac, Joel Z. Leibo, Edward Hughes"
+    authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Richard Everett<sup>‡</sup>, Laura Weidinger, Iason Gabriel, William S. Isaac, Joel Z. Leibo, Edward Hughes"
     venue: "AAMAS'21: Conference on Autonomous Agents and Multiagent Systems. 2021."
     paper_pdf: "https://dl.acm.org/doi/10.5555/3463952.3464123"
     selected: n
@@ -74,14 +74,9 @@ papers:
 
   - title: "Algorithmic Targeting of Social Policies: Fairness, Accuracy, and Distributed Governance"
     authors: "Alejandro Noriega-Campero, Bernardo Garcia Bulle-Bueno, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Alex Pentland"
-    venue: "FAccT*'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
+    venue: "FAccT<sup>‡</sup>'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3351095.3375784"
-    selected: 
-  # - title: "Fair Enough: Improving Fairness in Budget-Constrained Decision Making Using Confidence Thresholds"
-  #   authors: "<b>Michiel A. Bakker</b>, Humberto Riverón Valdés, Duy Patrick Tu, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
-  #   venue: "AAAI 2020 Workshop on SafeAI, 2020."
-  #   paper_pdf: "http://ceur-ws.org/Vol-2560/paper24.pdf"
-  #   selected: y
+    selected: n
 
   - title: "VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository"
     authors: "Kevin Z. Hu, Neil Gaikwad, Madelon Hulsebos, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, César A Hidalgo, Tim Kraska, Guoliang Li, Arvind Satyanarayan, Cagatay Demiralp"
@@ -90,7 +85,7 @@ papers:
     selected: n
 
   - title: "Sherlock: A Deep Learning Approach to Semantic Data Type Detection"
-    authors: "Madelon Hulsebos*, Kevin Z. Hu*, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, Tim Kraska, César A Hidalgo, Çagatay Demiralp"
+    authors: "Madelon Hulsebos<sup>‡</sup>, Kevin Z. Hu<sup>‡</sup>, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, Tim Kraska, César A Hidalgo, Çagatay Demiralp"
     venue: "KDD'19: Conference on Knowledge Discovery and Data Mining. 2019."
     paper_pdf: "https://dl.acm.org/citation.cfm?doid=3292500.3330993"
     selected: n
@@ -126,7 +121,7 @@ papers:
     selected: n
 
   - title: "Active Fairness in Algorithmic Decision Making"
-    authors: "Alejandro Noriega-Campero*, <b>Michiel A. Bakker*</b>, Bernardo Garcia-Bulle, Alex Pentland"
+    authors: "Alejandro Noriega-Campero<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Bernardo Garcia-Bulle, Alex Pentland"
     venue: "AIES'19: Third AAAI/ACM Conference on AI, Ethics, and Society. 2019."
     paper_pdf: "https://dl.acm.org/doi/10.1145/3306618.3314277"
     selected: y
@@ -144,13 +139,13 @@ papers:
     selected: n
 
   - title: "Prediction Propagation for Domain Adaptation"
-    authors: "Bjarke Felbo*, <b>Michiel A. Bakker*</b>, Abhimanyu Dubey, Sadhika S. Malladi, Alex Pentland, Iyad Rahwan"
+    authors: "Bjarke Felbo<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Abhimanyu Dubey, Sadhika S. Malladi, Alex Pentland, Iyad Rahwan"
     venue: "ICML 2018 Workshop on Learning with Limited Labels. 2018."
     paper_pdf: ""
     selected: n
 
   - title: "Validity of the single-particle description and noise resilience for multielectron quantum dots"
-    authors: "<b>Michiel A. Bakker*</b>, Sebastian Mehl*, Tuukka Hiltunen, David P. DiVincenzo"
+    authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Sebastian Mehl<sup>‡</sup>, Tuukka Hiltunen, David P. DiVincenzo"
     venue: "Physical Review B. 2015."
     paper_pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.155425"
     selected: n
@@ -160,6 +155,3 @@ papers:
     venue: "Journal of Instrumentation. 2013."
     paper_pdf: "http://iopscience.iop.org/article/10.1088/1748-0221/8/01/C01036/meta"
     selected: n
-
-
-
