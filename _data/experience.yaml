@@ -1,9 +1,9 @@
 experiences:
 
-- place: "Massachusetts Institute of Technology"
+- place: "MIT"
   time: "2024 - present"
   title: "Assistant Professor"
-  subtitle: "MIT Sloan School of Management, MIT Institute for Data, Systems, and Society (IDSS)"
+  subtitle: "Sloan School of Management <br/> Institute for Data, Systems, and Society (IDSS)"
   category: "work"
 
 - place: "Google DeepMind"
@@ -12,7 +12,7 @@ experiences:
   subtitle: "AI Safety, Large Language Models"
   category: "work"
 
-- place: "Massachusetts Institute of Technology"
+- place: "MIT"
   time: "2017 - 2020"
   title: "Ph.D. Student"
   subtitle: "Media Lab, Human Dynamics"
@@ -36,7 +36,7 @@ experiences:
   subtitle: "E-commerce flower startup"
   category: "work"
 
-- place: "QuTech, Delft University of Technology"
+- place: "QuTech, TU Delft"
   time: "2014 - 2015"
   title: "Master Thesis"
   subtitle: "Quantum Computing in Diamond"
@@ -48,10 +48,10 @@ experiences:
   subtitle: "Quantum Computing in Singlet-Triplet Qubits"
   category: "work"
 
-- place: "Lamudi Myanmar (Rocket Internet)"
+- place: "Lamudi Myanmar "
   time: "2013 - 2014"
   title: "Co-Founder and Country Manager"
-  subtitle: "Online real estate platform"
+  subtitle: "Rocket Internet, Online real estate platform"
   category: "work"
 
 - place: "Delft University of Technology"
@@ -66,7 +66,7 @@ experiences:
   subtitle: "Electron Emission Membranes"
   category: "school"
 
-- place: "Delft University of Technology"
+- place: "TU Delft"
   time: "2008 - 2012"
   title: "B.Sc. Student"
   subtitle: "Physics"
