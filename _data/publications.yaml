@@ -4,7 +4,7 @@ papers:
     authors: "Beth Goldberg, Diana Acosta-Navas, <b>Michiel A. Bakker</b>, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang"
     venue: "arXiv preprint. 2024."
     paper_pdf: "https://arxiv.org/abs/2412.09988"
-    selected: y
+    selected: n
 
   - title: "Supernotes: Driving Consensus in Crowd-Sourced Fact-Checking"
     authors: "Soham De, <b>Michiel A. Bakker</b>, Jay Baxter, Martin Saveski"
