@@ -2,6 +2,10 @@
   --highlight-yellow: #cd9768; /* Adjust this color to match the jacket */
 }
 
+hr, .horizontal-spacer {
+  border: 1px solid var(--highlight-yellow);
+}
+
 h4 {
   letter-spacing: .1rem; }
 .container {
@@ -39,15 +43,17 @@ h4 {
   font-weight: 600;
 }
 .docs-section {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--highlight-yellow);
   padding: 4rem 0;
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--highlight-yellow);
   padding: 15px 0 40px 0;
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
 .navbar {
   display: none; }
 .title-subtitle h3 {
