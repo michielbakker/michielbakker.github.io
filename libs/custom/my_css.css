@@ -41,9 +41,14 @@ h4 {
   line-height: 25px;
   text-transform: none;
   border: 1px solid var(--highlight-yellow); /* Add yellow border */
-  color: var(--highlight-yellow); /* Optional: Add matching text color */
-  background-color: transparent; /* Ensure the background is clear or matches */
-  border-radius: 5px; /* Optional: Keep the rounded edge consistent */
+  color: var(--highlight-yellow); /* Text color */
+  background-color: transparent; /* Background remains transparent */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+.paper .button:hover {
+  background-color: var(--highlight-yellow); /* Fills with yellow */
+  color: #fff; /* Text turns white for contrast */
 }
 .section-header {
   text-transform: uppercase;
