@@ -1,5 +1,14 @@
+:root {
+  --highlight-yellow: #c7a500; /* Adjust this color to match the jacket */
+}
+
 h4 {
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem; 
+  background-color: var(--highlight-yellow); /* Yellow background for h4 */
+  color: #fff; /* Ensure text is readable */
+  padding: 5px;
+  border-radius: 5px;
+}
 .container {
   max-width: 800px; }
 .header {
@@ -32,7 +41,9 @@ h4 {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: .2rem;
-  font-weight: 600; }
+  font-weight: 600;
+  color: var(--highlight-yellow); /* Yellow for section headers */
+}
 .docs-section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
@@ -89,8 +100,9 @@ h4 {
     height: 6.5rem;
     background: #fff;
     z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee; }
+    border-top: 5px solid var(--highlight-yellow); /* Add yellow border on top */
+    border-bottom: 1px solid #eee;
+  }
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -112,7 +124,9 @@ h4 {
     line-height: 6.5rem;
     color: #222; }
   .navbar-link.active {
-    color: #33C3F0; }
+    color: var(--highlight-yellow); /* Highlight links with yellow */
+    background-color: rgba(199, 165, 0, 0.2); /* Optional semi-transparent highlight */
+  }
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
