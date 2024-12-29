@@ -12,22 +12,34 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2411.06116"
     selected: y
 
-  - title: "How large language models can reshape collective intelligence"
-    authors: "Jason W. Burton, Ezequiel Lopez-Lopez, Shahar Hechtlinger, Zoe Rahwan, Samuel Aeschbach, <b>Michiel A. Bakker</b>, Joshua A. Becker, Aleks Berditchevskaia, Julian Berger, Levin Brinkmann, Lucie Flek, Stefan M. Herzog, Saffron Huang, Sayash Kapoor, Arvind Narayanan, Anne-Marie Nussberger, Taha Yasseri, Pietro Nickl, Abdullah Almaatouq, Ulrike Hahn, Ralf H. J. M. Kurvers, Susan Leavy, Iyad Rahwan, Divya Siddarth, Alice Siu, Anita W. Woolley, Dirk U. Wulff, Ralph Hertwig"
-    venue: "Nature Human Behavior. 2024."
-    paper_pdf: "https://www.nature.com/articles/s41562-024-01959-9"
-    selected: y
-
   - title: "AI can help humans find common ground in democratic deliberation"
     authors: "Michael Henry Tessler*, <b>Michiel A. Bakker*</b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
     venue: "Science. 2024."
     paper_pdf: "https://www.science.org/doi/10.1126/science.adq2852"
     selected: y
 
+  - title: "How large language models can reshape collective intelligence"
+    authors: "Jason W. Burton, Ezequiel Lopez-Lopez, Shahar Hechtlinger, Zoe Rahwan, Samuel Aeschbach, <b>Michiel A. Bakker</b>, Joshua A. Becker, Aleks Berditchevskaia, Julian Berger, Levin Brinkmann, Lucie Flek, Stefan M. Herzog, Saffron Huang, Sayash Kapoor, Arvind Narayanan, Anne-Marie Nussberger, Taha Yasseri, Pietro Nickl, Abdullah Almaatouq, Ulrike Hahn, Ralf H. J. M. Kurvers, Susan Leavy, Iyad Rahwan, Divya Siddarth, Alice Siu, Anita W. Woolley, Dirk U. Wulff, Ralph Hertwig"
+    venue: "Nature Human Behavior. 2024."
+    paper_pdf: "https://www.nature.com/articles/s41562-024-01959-9"
+    selected: y
+
+  - title: "How will advanced AI systems impact democracy?"
+    authors: "Christopher Summerfield, Lisa Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Helene Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
+    venue: "arXiv preprint. 2024."
+    paper_pdf: "https://arxiv.org/abs/2409.06729"
+    selected: y
+
   - title: "Statistical discrimination in learning agents"
     authors: "Edgar A. Duenez-Guzman, Kevin R. McKee, Yiran Mao, Ben Coppin, Silvia Chiappa, Alexander Sasha Vezhnevets, <b>Michiel A. Bakker</b>, Yoram Bachrach, Suzanne Sadedin, William Isaac, Karl Tuyls, Joel Z. Leibo"
-    venue: "Proceedings of the National Academy of Sciences (PNAS). 2022."
+    venue: "Proceedings of the National Academy of Sciences (PNAS). 2024."
     paper_pdf: "https://arxiv.org/abs/2110.11404"
+    selected: n
+
+  - title: "Language agents as digital representatives in collective decision-making"
+    authors: "Daniel Jarrett, Miruna Pislar, <b>Michiel A. Bakker</b>, Michael Henry Tessler, Raphael Koster, Jan Balaguer, Romuald Elie, Christopher Summerfield, Andrea Tacchetti"
+    venue: "NeurIPS'23 Workshop on Foundation Models for Decision Making. 2023."
+    paper_pdf: "https://openreview.net/pdf?id=sv7KZcUqu1"
     selected: y
 
   - title: "Scaffolding cooperation in human groups with deep reinforcement learning"
@@ -36,52 +48,57 @@ papers:
     paper_pdf: "https://psyarxiv.com/cr58a"
     selected: y
 
-  - title: "Language agents as digital representatives in collective decision-making"
-    authors: "Daniel Jarrett, Miruna Pislar, <b>Michiel A. Bakker</b>, Michael Henry Tessler, Raphael Koster, Jan Balaguer, Romuald Elie, Christopher Summerfield, Andrea Tacchetti"
-    venue: "NeurIPS'23, Workshop on Foundation Models for Decision Making. 2023."
-    paper_pdf: "https://openreview.net/pdf?id=sv7KZcUqu1"
-    selected: n
-
   - title: "Fine-tuning language models to find agreement among humans with diverse preferences"
     authors: "<b>Michiel A. Bakker*</b>, Martin J. Chadwick*, Hannah R. Sheahan*, Michael Henry Tessler, Lucy Campbell-Gillingham, Jan Balaguer, Nat McAleese, Amelia Glaese, John Aslanides, Matthew M. Botvinick, Christopher Summerfield"
     venue: "NeurIPS'22: Advances in Neural Information Processing Systems. 2022."
     paper_pdf: "https://arxiv.org/abs/2211.15006"
     selected: y
 
+  - title: "Quantifying the importance and location of SARS-CoV-2 transmission events in large metropolitan areas"
+    authors: "Alberto Aleta, David Martín-Corral, <b>Michiel A. Bakker</b>, Ana Pastore y Piontti, Marco Ajelli, Maria Litvinova, Matteo Chinazzi, Natalie E. Dean, M. Elizabeth Halloran, Ira M. Longini Jr, Alex Pentland, Alessandro Vespignani, Yamir Moreno, Esteban Moro"
+    venue: "Proceedings of the National Academy of Sciences (PNAS). 2022."
+    paper_pdf: "https://www.pnas.org/doi/10.1073/pnas.2112182119"
+    selected: n
+
   - title: "Modelling Cooperation in Network Games with Spatio-Temporal Complexity"
     authors: "<b>Michiel A. Bakker*</b>, Richard Everett*, Laura Weidinger, Iason Gabriel, William S. Isaac, Joel Z. Leibo, Edward Hughes"
     venue: "AAMAS'21: Conference on Autonomous Agents and Multiagent Systems. 2021."
     paper_pdf: "https://dl.acm.org/doi/10.5555/3463952.3464123"
+    selected: n
+
+  - title: "Beyond Reasonable Doubt: Improving Fairness in Budget-Constrained Decision Making using Confidence Thresholds"
+    authors: "<b>Michiel A. Bakker</b>, Duy Patrick Tu, Krishna P. Gummadi, Alex Pentland, Kush R. Varshney, Adrian Weller"
+    venue: "AIES'21: Fifth AAAI/ACM Conference on AI, Ethics, and Society. 2021."
+    paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3461702.3462575"
     selected: y
 
-  - title: "Fair Enough: Improving Fairness in Budget-Constrained Decision Making Using Confidence Thresholds"
-    authors: "<b>Michiel A. Bakker</b>, Humberto Riverón Valdés, Duy Patrick Tu, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
-    venue: "AAAI 2020 Workshop on SafeAI, 2020."
-    paper_pdf: "http://ceur-ws.org/Vol-2560/paper24.pdf"
-    selected: y
+  - title: "Algorithmic Targeting of Social Policies: Fairness, Accuracy, and Distributed Governance"
+    authors: "Alejandro Noriega-Campero, Bernardo Garcia Bulle-Bueno, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Alex Pentland"
+    venue: "FAccT*'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
+    paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3351095.3375784"
+    selected: 
+  # - title: "Fair Enough: Improving Fairness in Budget-Constrained Decision Making Using Confidence Thresholds"
+  #   authors: "<b>Michiel A. Bakker</b>, Humberto Riverón Valdés, Duy Patrick Tu, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
+  #   venue: "AAAI 2020 Workshop on SafeAI, 2020."
+  #   paper_pdf: "http://ceur-ws.org/Vol-2560/paper24.pdf"
+  #   selected: y
 
   - title: "VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository"
     authors: "Kevin Z. Hu, Neil Gaikwad, Madelon Hulsebos, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, César A Hidalgo, Tim Kraska, Guoliang Li, Arvind Satyanarayan, Cagatay Demiralp"
     venue: "CHI'19: Conference on Human Factors in Computing Systems. 2019."
     paper_pdf: "https://dl.acm.org/citation.cfm?id=3290605.3300892"
-    selected: y
+    selected: n
 
   - title: "Sherlock: A Deep Learning Approach to Semantic Data Type Detection"
     authors: "Madelon Hulsebos*, Kevin Z. Hu*, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, Tim Kraska, César A Hidalgo, Çagatay Demiralp"
     venue: "KDD'19: Conference on Knowledge Discovery and Data Mining. 2019."
     paper_pdf: "https://dl.acm.org/citation.cfm?doid=3292500.3330993"
-    selected: y
+    selected: n
 
   - title: "VizML: A Machine Learning Approach to Visualization Recommendation"
     authors: "Kevin Z. Hu, <b>Michiel A. Bakker</b>, Stephen Li, Tim Kraska, César A. Hidalgo"
     venue: "CHI'19: Conference on Human Factors in Computing Systems. 2019."
     paper_pdf: "https://arxiv.org/abs/1808.04819"
-    selected: y
-
-  - title: "Quantifying the importance and location of SARS-CoV-2 transmission events in large metropolitan areas"
-    authors: "Alberto Aleta, David Martín-Corral, <b>Michiel A. Bakker</b>, Ana Pastore y Piontti, Marco Ajelli, Maria Litvinova, Matteo Chinazzi, Natalie E. Dean, M. Elizabeth Halloran, Ira M. Longini Jr, Alex Pentland, Alessandro Vespignani, Yamir Moreno, Esteban Moro"
-    venue: "Proceedings of the National Academy of Sciences (PNAS). 2022."
-    paper_pdf: "https://www.pnas.org/doi/10.1073/pnas.2112182119"
     selected: n
 
   - title: "Atomic-scale imaging of a 27-nuclear-spin cluster using a quantum sensor"
@@ -100,13 +117,7 @@ papers:
     authors: "<b>Michiel A. Bakker</b>, Daoud A. Piracha, Patricia J. Lu, Keis Bejgo, Mohsen Bahrami, Yan Leng, Jose Balsa-Barreiro, Julie Ricard, Alfredo J.Morales, Vivek K. Singh, Burcin Bozkaya, Selim Balcisoy, Alex Pentland"
     venue: "Guide to Mobile Data Analytics in Refugee Scenarios, Springer. 2019."
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-030-12554-7_7"
-    selected: y
-
-  - title: "Algorithmic Targeting of Social Policies: Fairness, Accuracy, and Distributed Governance"
-    authors: "Alejandro Noriega-Campero, Bernardo Garcia Bulle-Bueno, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Alex Pentland"
-    venue: "FAccT*'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
-    paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3351095.3375784"
-    selected: y
+    selected: n
 
   - title: "DADI: Dynamic Discovery of Fair Information with Adversarial Reinforcement Learning"
     authors: "<b>Michiel A. Bakker</b>, Duy Patrick Tu, Humberto Riverón Valdés, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
@@ -114,21 +125,41 @@ papers:
     paper_pdf: "https://arxiv.org/abs/1910.13983"
     selected: n
 
+  - title: "Active Fairness in Algorithmic Decision Making"
+    authors: "Alejandro Noriega-Campero*, <b>Michiel A. Bakker*</b>, Bernardo Garcia-Bulle, Alex Pentland"
+    venue: "AIES'19: Third AAAI/ACM Conference on AI, Ethics, and Society. 2019."
+    paper_pdf: "https://dl.acm.org/doi/10.1145/3306618.3314277"
+    selected: y
+
   - title: "On Fairness in Budget-Constrained Decision Making"
     authors: "<b>Michiel A. Bakker</b>, Humberto Riverón Valdés, Duy Patrick Tu, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
     venue: "KDD Workshop on Explainable AI. 2019."
     paper_pdf: "https://krvarshney.github.io/pubs/BakkerNTSVP_kddxai2019.pdf"
-    selected: y
+    selected: n
+
+  - title: "One-second coherence for a single electron spin coupled to a multi-qubit nuclear-spin environment"
+    authors: "Mohamed H. Abobeih, Julia Cramer, <b>Michiel A. Bakker</b>, Norbert Kalb, Daniel J. Twitchen, Matthew Markham, Tim H. Taminiau"
+    venue: "Nature Communications. 2018."
+    paper_pdf: "https://www.nature.com/articles/s41467-018-04916-z"
+    selected: n
 
   - title: "Prediction Propagation for Domain Adaptation"
     authors: "Bjarke Felbo*, <b>Michiel A. Bakker*</b>, Abhimanyu Dubey, Sadhika S. Malladi, Alex Pentland, Iyad Rahwan"
-    venue: "ICML Workshop on Learning with Limited Labels. 2018."
+    venue: "ICML 2018 Workshop on Learning with Limited Labels. 2018."
     paper_pdf: ""
-    selected: y
+    selected: n
 
   - title: "Validity of the single-particle description and noise resilience for multielectron quantum dots"
     authors: "<b>Michiel A. Bakker*</b>, Sebastian Mehl*, Tuukka Hiltunen, David P. DiVincenzo"
     venue: "Physical Review B. 2015."
     paper_pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.155425"
+    selected: n
+
+  - title: "Tipsy single soft photon detector and Trixy ultrafast tracking detector"
+    authors: "Harry van der Graaf, <b>Michiel A. Bakker</b>, Hong W. Chan, Eduardo Charbon, Fabio Santagata, Pasqualina M. Sarro, Dennis R. Schaart"
+    venue: "Journal of Instrumentation. 2013."
+    paper_pdf: "http://iopscience.iop.org/article/10.1088/1748-0221/8/01/C01036/meta"
     selected: y
+
+
 
