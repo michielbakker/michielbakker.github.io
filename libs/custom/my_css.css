@@ -6,6 +6,10 @@ hr, .horizontal-spacer {
   border: 1px solid var(--highlight-yellow);
 }
 
+hr, .horizontal-line {
+  border: 1px solid var(--highlight-yellow);
+}
+
 h4 {
   letter-spacing: .1rem; }
 .container {
