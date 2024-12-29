@@ -35,7 +35,12 @@ h4 {
   padding: 0 25px;
   font-weight: 100;
   line-height: 25px;
-  text-transform: none; }
+  text-transform: none;
+  border: 1px solid var(--highlight-yellow); /* Add yellow border */
+  color: var(--highlight-yellow); /* Optional: Add matching text color */
+  background-color: transparent; /* Ensure the background is clear or matches */
+  border-radius: 5px; /* Optional: Keep the rounded edge consistent */
+}
 .section-header {
   text-transform: uppercase;
   font-size: 1.5rem;
