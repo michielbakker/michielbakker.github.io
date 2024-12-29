@@ -1,14 +1,9 @@
 :root {
-  --highlight-yellow: #c7a500; /* Adjust this color to match the jacket */
+  --highlight-yellow: #cd9768; /* Adjust this color to match the jacket */
 }
 
 h4 {
-  letter-spacing: .1rem; 
-  background-color: var(--highlight-yellow); /* Yellow background for h4 */
-  color: #fff; /* Ensure text is readable */
-  padding: 5px;
-  border-radius: 5px;
-}
+  letter-spacing: .1rem; }
 .container {
   max-width: 800px; }
 .header {
@@ -42,7 +37,6 @@ h4 {
   font-size: 1.5rem;
   letter-spacing: .2rem;
   font-weight: 600;
-  color: var(--highlight-yellow); /* Yellow for section headers */
 }
 .docs-section {
   border-top: 1px solid #eee;
