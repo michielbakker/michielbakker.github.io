@@ -115,7 +115,7 @@ h4 {
     background: #fff;
     z-index: 99;
     border-top: 3px solid var(--highlight-yellow); /* Add yellow border on top */
-    border-bottom: 3px solid var(--highlight-yellow);
+    border-bottom: 2px solid var(--highlight-yellow);
   }
   .navbar-spacer {
     display: none; }
