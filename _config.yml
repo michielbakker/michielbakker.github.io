@@ -2,6 +2,7 @@ source:      .
 destination: ./_site
 includes:    ./_includes
 baseurl: ""
+google_analytics: G-PEJ2CJBMYP
 url: "https://miba.dev"
 
 collections:
