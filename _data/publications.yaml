@@ -1,5 +1,5 @@
 papers:
- - title: "Value Profiles for Encoding Human Variation"
+  - title: "Value Profiles for Encoding Human Variation"
     authors: "Taylor Sorensen, Pushkar Mishra, Roma Patel, Michael Henry Tessler, <b>Michiel Bakker</b>, Georgina Evans, Iason Gabriel, Noah Goodman, Verena Rieser"
     venue: "arXiv preprint. 2025."
     paper_pdf: "https://arxiv.org/abs/2503.15484"
@@ -7,7 +7,7 @@ papers:
 
   - title: "Using Collective Dialogues and AI to Find Common Ground Between Israeli and Palestinian Peacebuilders"
     authors: "Andrew Konya, Luke Thorburn, Wasim Almasri, Oded Adomi Leshem, Ariel D. Procaccia, Lisa Schirch, <b>Michiel A. Bakker</b>"
-    venue: "FAccT<sup>‡</sup>'25: ACM Conference on Fairness, Accountability, and Transparency. 2025."
+    venue: "FAccT'25: ACM Conference on Fairness, Accountability, and Transparency. 2025."
     paper_pdf: "https://arxiv.org/abs/2503.01769"
     selected: y
 
