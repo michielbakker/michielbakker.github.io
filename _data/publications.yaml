@@ -1,4 +1,21 @@
 papers:
+ - title: "Value Profiles for Encoding Human Variation"
+    authors: "Taylor Sorensen, Pushkar Mishra, Roma Patel, Michael Henry Tessler, <b>Michiel Bakker</b>, Georgina Evans, Iason Gabriel, Noah Goodman, Verena Rieser"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2503.15484"
+    selected: y
+
+  - title: "Using Collective Dialogues and AI to Find Common Ground Between Israeli and Palestinian Peacebuilders"
+    authors: "Andrew Konya, Luke Thorburn, Wasim Almasri, Oded Adomi Leshem, Ariel D. Procaccia, Lisa Schirch, <b>Michiel A. Bakker</b>"
+    venue: "FAccT<sup>‡</sup>'25: ACM Conference on Fairness, Accountability, and Transparency. 2025."
+    paper_pdf: "https://arxiv.org/abs/2503.01769"
+    selected: y
+
+  - title: "Tell Me Why: Incentivizing Explanations"
+    authors: "Siddarth Srinivasan, Ezra Karger, <b>Michiel Bakker</b>, Yiling Chen"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2502.13410"
+    selected: y
 
   - title: "AI and the Future of Digital Public Squares"
     authors: "Beth Goldberg, Diana Acosta-Navas, <b>Michiel A. Bakker</b>, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang"
@@ -39,7 +56,7 @@ papers:
   - title: "Language agents as digital representatives in collective decision-making"
     authors: "Daniel Jarrett, Miruna Pislar, <b>Michiel A. Bakker</b>, Michael Henry Tessler, Raphael Koster, Jan Balaguer, Romuald Elie, Christopher Summerfield, Andrea Tacchetti"
     venue: "NeurIPS'23 Workshop on Foundation Models for Decision Making. 2023."
-    paper_pdf: "https://openreview.net/pdf?id=sv7KZcUqu1"
+    paper_pdf: "https://arxiv.org/abs/2502.09369"
     selected: y
 
   - title: "Scaffolding cooperation in human groups with deep reinforcement learning"
