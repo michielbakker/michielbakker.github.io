@@ -1,4 +1,34 @@
 papers:
+  - title: "Democratic AI is Possible. The Democracy Levels Framework Shows How It Might Work."
+    authors: "Aviv Ovadya, Kyle Redman, Luke Thorburn, Quan Ze Chen, Oliver Smith, Flynn Devine, Andrew Konya, Smitha Milli, Manon Revel, Kevin Feng, Amy X Zhang, Bilva Chandra, <b>Michiel A Bakker</b>, Atoosa Kasirzadeh"
+    venue: "Forty-second International Conference on Machine Learning (ICML). 2025."
+    paper_pdf: "https://democracylevels.org/"
+    selected: y
+
+  - title: "Full-Stack Alignment: Co-Aligning AI and Institutions with Thicker Models of Value"
+    authors: "Ryan Lowe, Joe Edelman, Tan Zhi-Xuan, Oliver Klingefjord, Ellie Hain, Vincent Wang, Atrisha Sarkar, <b>Michiel A. Bakker</b>, Fazl Barez, Matija Franklin, Andreas Haupt, Jobst Heitzig, Wesley H Holliday, Julian Jara-Ettinger, Atoosa Kasirzadeh, Ryan Othniel Kearns, James Ravi Kirkpatrick, Andrew Koh, Joel Lehman, Sydney Levine, Manon Revel, Ivan Vendrov"
+    venue: "Preprint. 2025."
+    paper_pdf: "https://www.full-stack-alignment.ai/"
+    selected: n
+
+  - title: "Robust AI Personalization Will Require a Human Context Protocol"
+    authors: "Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, Andrew Trask, E. Glen Weyl, <b>Michiel A. Bakker</b>"
+    venue: "Preprint. 2025."
+    paper_pdf: "https://miba.dev/assets/publications/HCP_ArXiv_2025.pdf"
+    selected: y
+
+  - title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities"
+    authors: "Gheorghe Comanici, Eric Bieber, ..., <b>Michiel A. Bakker</b>, ..., Yin Li, Chris Hahn (3289 authors ordered randomly)"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2507.06261"
+    selected: y
+
+  - title: "Scaling Human Judgment in Community Notes with LLMs"
+    authors: "Haiwen Li, Soham De, Manon Revel, Andreas Haupt, Brad Miller, Keith Coleman, Jay Baxter, Martin Saveski, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2506.24118"
+    selected: y
+
   - title: "Value Profiles for Encoding Human Variation"
     authors: "Taylor Sorensen, Pushkar Mishra, Roma Patel, Michael Henry Tessler, <b>Michiel Bakker</b>, Georgina Evans, Iason Gabriel, Noah Goodman, Verena Rieser"
     venue: "arXiv preprint. 2025."
