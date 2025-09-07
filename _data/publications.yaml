@@ -1,12 +1,12 @@
 papers:
   - title: "The Case for Harmful Capability Uplift: Why AI Safety Evaluation Must Focus on Human-AI Systems"
-    authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A Bakker</b>"
+    authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
     venue: "Thirty-ninth Conference on Neural Information Processing Systems (NeurIPS). 2025."
     paper_pdf: "https://miba.dev/assets/publications/2025_hcp/harmful_capability_uplift.pdf"
     selected: y
 
   - title: "Democratic AI is Possible. The Democracy Levels Framework Shows How It Might Work."
-    authors: "Aviv Ovadya, Kyle Redman, Luke Thorburn, Quan Ze Chen, Oliver Smith, Flynn Devine, Andrew Konya, Smitha Milli, Manon Revel, Kevin Feng, Amy X Zhang, Bilva Chandra, <b>Michiel A Bakker</b>, Atoosa Kasirzadeh"
+    authors: "Aviv Ovadya, Kyle Redman, Luke Thorburn, Quan Ze Chen, Oliver Smith, Flynn Devine, Andrew Konya, Smitha Milli, Manon Revel, Kevin Feng, Amy X Zhang, Bilva Chandra, <b>Michiel A. Bakker</b>, Atoosa Kasirzadeh"
     venue: "Forty-second International Conference on Machine Learning (ICML). 2025."
     paper_pdf: "https://democracylevels.org/"
     selected: y
