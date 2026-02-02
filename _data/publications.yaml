@@ -2,7 +2,7 @@ papers:
   - title: "The Case for Harmful Capability Uplift: Why AI Safety Evaluation Must Focus on Human-AI Systems"
     authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
     venue: "Preprint. 2025."
-    paper_pdf: "https://miba.dev/assets/publications/2025_hcp/hcp_ssrn.pdf"
+    paper_pdf: "https://miba.dev/assets/publications/2025_hcu/harmful_capability_uplift.pdf"
     selected: y
 
   - title: "Democratic AI is Possible. The Democracy Levels Framework Shows How It Might Work."
@@ -20,7 +20,7 @@ papers:
   - title: "Robust AI Personalization Will Require a Human Context Protocol"
     authors: "Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, Andrew Trask, E. Glen Weyl, <b>Michiel A. Bakker</b>"
     venue: "Preprint. 2025."
-    paper_pdf: "https://miba.dev/assets/publications/HCP_ArXiv_2025.pdf"
+    paper_pdf: "https://miba.dev/assets/publications/hcp_ssrn.pdf"
     selected: y
 
   - title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities"
