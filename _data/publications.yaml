@@ -9,7 +9,7 @@ papers:
     authors: "Xiaoyang Cao, Zelai Xu, Mo Guang, Kaiwen Long, <b>Michiel A. Bakker</b>, Yu Wang, Chao Yu"
     venue: "International Conference on Learning Representations (ICLR). 2026."
     paper_pdf: "https://arxiv.org/abs/2509.24159"
-    selected: y
+    selected: n
 
   - title: "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLM"
     authors: "Suyash Fulay, Jocelyn Zhu, <b>Michiel A. Bakker</b>"
