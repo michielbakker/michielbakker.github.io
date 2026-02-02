@@ -1,4 +1,28 @@
 papers:
+  - title: "Benchmarking Overton Pluralism in LLMs"
+    authors: "Elinor Poole-Dayan, Jiayi Wu, Taylor Sorensen, Jiaxin Pei, <b>Michiel A. Bakker</b>"
+    venue: "International Conference on Learning Representations (ICLR). 2026"
+    paper_pdf: "https://arxiv.org/abs/2512.01351"
+    selected: y
+
+  - title: "RE-PO: Robust Enhanced Policy Optimization as a General Framework for LLM Alignment"
+    authors: "Xiaoyang Cao, Zelai Xu, Mo Guang, Kaiwen Long, <b>Michiel A. Bakker</b>, Yu Wang, Chao Yu"
+    venue: "International Conference on Learning Representations (ICLR). 2026."
+    paper_pdf: "https://arxiv.org/abs/2509.24159"
+    selected: y
+
+  - title: "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLM"
+    authors: "Suyash Fulay, Jocelyn Zhu, <b>Michiel A. Bakker</b>"
+    venue: "The International Association for Safe & Ethical AI (IASEAI). 2026."
+    paper_pdf: "https://arxiv.org/abs/2510.12689"
+    selected: y
+
+  - title: "Can AI Mediation Improve Democratic Deliberation?"
+    authors: "Michael Henry Tessler, Georgina Evans, <b>Michiel A. Bakker</b>, Iason Gabriel, Sophie Bridgers, Rishub Jain, Raphael Koster, Verena Rieser, Anca Dragan, Matthew Botvinick, Christopher Summerfield"
+    venue: "Artificial Intelligence and Democratic Freedoms, Knight First Amendment Institute. 2025."
+    paper_pdf: "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation"
+    selected: y
+
   - title: "The Case for Harmful Capability Uplift: Why AI Safety Evaluation Must Focus on Human-AI Systems"
     authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
     venue: "Preprint. 2025."
