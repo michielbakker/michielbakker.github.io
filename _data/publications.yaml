@@ -1,7 +1,73 @@
 papers:
+  - title: "Do Modules Stay in Their Lane? Role Drift in Compound LLM Systems"
+    authors: "Xiaoyang Cao, Sidharth Srinivasan, <b>Michiel A. Bakker</b>"
+    venue: "Preprint. 2026."
+    paper_pdf: "https://michielbakker.github.io/assets/publications/Role_Drift_2026_preprint.pdf"
+    selected: y
+
+  - title: "Robust AI Personalization Controls: The Human Context Protocol"
+    authors: "Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, Jiaxin Pei, Andrew Trask, E. Glen Weyl, <b>Michiel A. Bakker</b>"
+    venue: "Forty-third International Conference on Machine Learning (ICML). 2026."
+    paper_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403981"
+    selected: y
+
+  - title: "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce"
+    authors: "Zeyuan Li, Lukas Petersson, Alessandro Acquisti, <b>Michiel A. Bakker</b>"
+    venue: "Preprint. 2026."
+    paper_pdf: "https://michielbakker.github.io/assets/publications/Vending_2026_preprint.pdf"
+    selected: y
+
+  - title: "AI and Collective Decisions: Strengthening Legitimacy and Losers' Consent"
+    authors: "Shravya Fulay, Pranav Ravi, Emily Kubin, Sohan Mohanty, <b>Michiel A. Bakker</b>, Deb Roy"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2604.05368"
+    selected: n
+
+  - title: "Multi-User Large Language Model Agents"
+    authors: "Sherry Yang, Siyu Zhu, Hancheng Zhu, José Rafael Enríquez, David Wang, Alex Pentland, <b>Michiel A. Bakker</b>, ..."
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2604.08567"
+    selected: n
+
+  - title: "AI Assistance Reduces Persistence and Hurts Independent Performance"
+    authors: "Grace Liu, Brian Christian, Talia Dumbalska, <b>Michiel A. Bakker</b>, Rahul Dubey"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2604.04721"
+    selected: y
+
+  - title: "AI Fact-Checking in the Wild: A Field Evaluation of LLM-Written Community Notes on X"
+    authors: "Haiwen Li, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2604.02592"
+    selected: y
+
+  - title: "Evaluating Human-AI Safety: A Framework for Measuring Harmful Capability Uplift"
+    authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2603.26676"
+    selected: n
+
+  - title: "The AI Proxy Advisor"
+    authors: "<b>Michiel A. Bakker</b>, Maxime Couvert, Sercan Demir, Roni Michaely"
+    venue: "Working paper. 2026."
+    paper_pdf: ""
+    selected: n
+
+  - title: "Agora: Teaching the Skill of Consensus-Finding with AI Personas Grounded in Human Voice"
+    authors: "Shravya Pradeep Fulay, Pranav Ravi, Ojas Gokhale, Emily Yi, <b>Michiel A. Bakker</b>, Deb Roy"
+    venue: "CHI EA'26: Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems. 2026."
+    paper_pdf: ""
+    selected: n
+
+  - title: "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLMs"
+    authors: "Suyash Fulay, Jocelyn Zhu, <b>Michiel A. Bakker</b>"
+    venue: "EACL'26: Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics. 2026."
+    paper_pdf: "https://arxiv.org/abs/2510.12689"
+    selected: y
+
   - title: "Benchmarking Overton Pluralism in LLMs"
     authors: "Elinor Poole-Dayan, Jiayi Wu, Taylor Sorensen, Jiaxin Pei, <b>Michiel A. Bakker</b>"
-    venue: "International Conference on Learning Representations (ICLR). 2026"
+    venue: "International Conference on Learning Representations (ICLR). 2026."
     paper_pdf: "https://arxiv.org/abs/2512.01351"
     selected: y
 
@@ -11,22 +77,28 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2509.24159"
     selected: n
 
-  - title: "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLM"
-    authors: "Suyash Fulay, Jocelyn Zhu, <b>Michiel A. Bakker</b>"
-    venue: "The International Association for Safe & Ethical AI (IASEAI). 2026."
-    paper_pdf: "https://arxiv.org/abs/2510.12689"
+  - title: "The Impact of Advanced AI Systems on Democracy"
+    authors: "Christopher Summerfield, Lisa P. Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Hélène Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
+    venue: "Nature Human Behaviour, 9, 2420–2430. 2025."
+    paper_pdf: "https://www.nature.com/articles/s41562-025-02294-1"
     selected: y
 
-  - title: "Can AI Mediation Improve Democratic Deliberation?"
-    authors: "Michael Henry Tessler, Georgina Evans, <b>Michiel A. Bakker</b>, Iason Gabriel, Sophie Bridgers, Rishub Jain, Raphael Koster, Verena Rieser, Anca Dragan, Matthew Botvinick, Christopher Summerfield"
-    venue: "Artificial Intelligence and Democratic Freedoms, Knight First Amendment Institute. 2025."
-    paper_pdf: "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation"
+  - title: "Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs"
+    authors: "Siyu Zhu, Sherry Yang, <b>Michiel A. Bakker</b>, Alex Pentland, Jiaxin Pei"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2510.05154"
+    selected: n
+
+  - title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities"
+    authors: "Gheorghe Comanici, Eric Bieber, ..., <b>Michiel A. Bakker</b>, ..., Yin Li, Chris Hahn (3289 authors ordered randomly)"
+    venue: "arXiv preprint. 2025."
+    paper_pdf: "https://arxiv.org/abs/2507.06261"
     selected: y
 
-  - title: "The Case for Harmful Capability Uplift: Why AI Safety Evaluation Must Focus on Human-AI Systems"
-    authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
-    venue: "Preprint. 2025."
-    paper_pdf: "https://miba.dev/assets/publications/2025_hcu/harmful_capability_uplift.pdf"
+  - title: "Scaling Human Judgment in Community Notes with LLMs"
+    authors: "Haiwen Li, Soham De, Manon Revel, Andreas Haupt, Brad Miller, Keith Coleman, Jay Baxter, Martin Saveski, <b>Michiel A. Bakker</b>"
+    venue: "Journal of Online Trust and Safety (2025)"
+    paper_pdf: "https://arxiv.org/abs/2506.24118"
     selected: y
 
   - title: "Democratic AI is Possible. The Democracy Levels Framework Shows How It Might Work."
@@ -41,33 +113,15 @@ papers:
     paper_pdf: "https://www.full-stack-alignment.ai/"
     selected: n
 
-  - title: "Robust AI Personalization Will Require a Human Context Protocol"
-    authors: "Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, Andrew Trask, E. Glen Weyl, <b>Michiel A. Bakker</b>"
-    venue: "Preprint. 2025."
-    paper_pdf: "https://miba.dev/assets/publications/hcp_ssrn.pdf"
-    selected: y
-
-  - title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities"
-    authors: "Gheorghe Comanici, Eric Bieber, ..., <b>Michiel A. Bakker</b>, ..., Yin Li, Chris Hahn (3289 authors ordered randomly)"
-    venue: "arXiv preprint. 2025."
-    paper_pdf: "https://arxiv.org/abs/2507.06261"
-    selected: y
-
-  - title: "Scaling Human Judgment in Community Notes with LLMs"
-    authors: "Haiwen Li, Soham De, Manon Revel, Andreas Haupt, Brad Miller, Keith Coleman, Jay Baxter, Martin Saveski, <b>Michiel A. Bakker</b>"
-    venue: "arXiv preprint. 2025."
-    paper_pdf: "https://arxiv.org/abs/2506.24118"
-    selected: y
-
   - title: "Value Profiles for Encoding Human Variation"
     authors: "Taylor Sorensen, Pushkar Mishra, Roma Patel, Michael Henry Tessler, <b>Michiel Bakker</b>, Georgina Evans, Iason Gabriel, Noah Goodman, Verena Rieser"
-    venue: "arXiv preprint. 2025."
+    venue: "EMNLP'25: Conference on Empirical Methods in Natural Language Processing. 2025."
     paper_pdf: "https://arxiv.org/abs/2503.15484"
     selected: y
 
   - title: "Using Collective Dialogues and AI to Find Common Ground Between Israeli and Palestinian Peacebuilders"
     authors: "Andrew Konya, Luke Thorburn, Wasim Almasri, Oded Adomi Leshem, Ariel D. Procaccia, Lisa Schirch, <b>Michiel A. Bakker</b>"
-    venue: "FAccT'25: ACM Conference on Fairness, Accountability, and Transparency. 2025."
+    venue: "FAccT'25: Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency. 2025."
     paper_pdf: "https://arxiv.org/abs/2503.01769"
     selected: y
 
@@ -77,17 +131,29 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2502.13410"
     selected: y
 
+  - title: "Perceptual Interventions Ameliorate Statistical Discrimination in Learning Agents"
+    authors: "Edgar A. Duéñez-Guzmán, Raluca Comanescu, Yiran Mao, Kevin R. McKee, Ben Coppin, Silvia Chiappa, Alexander Sasha Vezhnevets, <b>Michiel A. Bakker</b>, Yoram Bachrach, Suzanne Sadedin, William Isaac, Karl Tuyls, Joel Z. Leibo"
+    venue: "Proceedings of the National Academy of Sciences (PNAS), 122(25), e2319933121. 2025."
+    paper_pdf: "https://arxiv.org/abs/2110.11404"
+    selected: n
+
+  - title: "Can AI Mediation Improve Democratic Deliberation?"
+    authors: "Michael Henry Tessler, Georgina Evans, <b>Michiel A. Bakker</b>, Iason Gabriel, Sophie Bridgers, Rishub Jain, Raphael Koster, Verena Rieser, Anca Dragan, Matthew Botvinick, Christopher Summerfield"
+    venue: "Artificial Intelligence and Democratic Freedoms, Knight First Amendment Institute. 2025."
+    paper_pdf: "https://knightcolumbia.org/content/can-ai-mediation-improve-democratic-deliberation"
+    selected: y
+
+  - title: "Supernotes: Driving Consensus in Crowd-Sourced Fact-Checking"
+    authors: "Soham De, <b>Michiel A. Bakker</b>, Jay Baxter, Martin Saveski"
+    venue: "WWW'25: Proceedings of the ACM Web Conference 2025, 3751–3761. 2025."
+    paper_pdf: "https://arxiv.org/abs/2411.06116"
+    selected: y
+
   - title: "AI and the Future of Digital Public Squares"
     authors: "Beth Goldberg, Diana Acosta-Navas, <b>Michiel A. Bakker</b>, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang"
     venue: "arXiv preprint. 2024."
     paper_pdf: "https://arxiv.org/abs/2412.09988"
     selected: n
-
-  - title: "Supernotes: Driving Consensus in Crowd-Sourced Fact-Checking"
-    authors: "Soham De, <b>Michiel A. Bakker</b>, Jay Baxter, Martin Saveski"
-    venue: "arXiv preprint. 2024."
-    paper_pdf: "https://arxiv.org/abs/2411.06116"
-    selected: y
 
   - title: "AI can help humans find common ground in democratic deliberation"
     authors: "Michael Henry Tessler<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
@@ -97,21 +163,9 @@ papers:
 
   - title: "How large language models can reshape collective intelligence"
     authors: "Jason W. Burton, Ezequiel Lopez-Lopez, Shahar Hechtlinger, Zoe Rahwan, Samuel Aeschbach, <b>Michiel A. Bakker</b>, Joshua A. Becker, Aleks Berditchevskaia, Julian Berger, Levin Brinkmann, Lucie Flek, Stefan M. Herzog, Saffron Huang, Sayash Kapoor, Arvind Narayanan, Anne-Marie Nussberger, Taha Yasseri, Pietro Nickl, Abdullah Almaatouq, Ulrike Hahn, Ralf H. J. M. Kurvers, Susan Leavy, Iyad Rahwan, Divya Siddarth, Alice Siu, Anita W. Woolley, Dirk U. Wulff, Ralph Hertwig"
-    venue: "Nature Human Behavior. 2024."
+    venue: "Nature Human Behaviour. 2024."
     paper_pdf: "https://www.nature.com/articles/s41562-024-01959-9"
     selected: y
-
-  - title: "How will advanced AI systems impact democracy?"
-    authors: "Christopher Summerfield, Lisa Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Helene Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
-    venue: "arXiv preprint. 2024."
-    paper_pdf: "https://arxiv.org/abs/2409.06729"
-    selected: y
-
-  - title: "Statistical discrimination in learning agents"
-    authors: "Edgar A. Duenez-Guzman, Kevin R. McKee, Yiran Mao, Ben Coppin, Silvia Chiappa, Alexander Sasha Vezhnevets, <b>Michiel A. Bakker</b>, Yoram Bachrach, Suzanne Sadedin, William Isaac, Karl Tuyls, Joel Z. Leibo"
-    venue: "Proceedings of the National Academy of Sciences (PNAS). 2024."
-    paper_pdf: "https://arxiv.org/abs/2110.11404"
-    selected: n
 
   - title: "Language agents as digital representatives in collective decision-making"
     authors: "Daniel Jarrett, Miruna Pislar, <b>Michiel A. Bakker</b>, Michael Henry Tessler, Raphael Koster, Jan Balaguer, Romuald Elie, Christopher Summerfield, Andrea Tacchetti"
@@ -121,7 +175,7 @@ papers:
 
   - title: "Scaffolding cooperation in human groups with deep reinforcement learning"
     authors: "Kevin McKee, Andrea Tacchetti, <b>Michiel A. Bakker</b>, Jan Balaguer, Lucy Campbell-Gillingham, Richard Everett, Matthew M. Botvinick"
-    venue: "Nature Human Behavior. 2023."
+    venue: "Nature Human Behaviour. 2023."
     paper_pdf: "https://psyarxiv.com/cr58a"
     selected: y
 
@@ -186,7 +240,7 @@ papers:
     selected: n
 
   - title: "Measuring fine-grained multidimensional integration using mobile phone metadata: the case of Syrian refugees in Turkey"
-    authors: "<b>Michiel A. Bakker</b>, Daoud A. Piracha, Patricia J. Lu, Keis Bejgo, Mohsen Bahrami, Yan Leng, Jose Balsa-Barreiro, Julie Ricard, Alfredo J.Morales, Vivek K. Singh, Burcin Bozkaya, Selim Balcisoy, Alex Pentland"
+    authors: "<b>Michiel A. Bakker</b>, Daoud A. Piracha, Patricia J. Lu, Keis Bejgo, Mohsen Bahrami, Yan Leng, Jose Balsa-Barreiro, Julie Ricard, Alfredo J. Morales, Vivek K. Singh, Burcin Bozkaya, Selim Balcisoy, Alex Pentland"
     venue: "Guide to Mobile Data Analytics in Refugee Scenarios, Springer. 2019."
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-030-12554-7_7"
     selected: n
