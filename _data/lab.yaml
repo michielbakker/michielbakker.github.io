@@ -26,6 +26,13 @@ members:
     url: "https://haiwenli.dev/"
 
 
+  - name: "Prerna Ravi"
+    group: "PhD Students"
+    url: "https://prernaravi.com/"
+    coadvisors:
+      - name: "Hal Abelson"
+        url: "https://groups.csail.mit.edu/mac/users/hal/"
+
   - name: "Robin Na"
     group: "PhD Students"
     url: "https://robin-na.github.io/"
@@ -40,10 +47,3 @@ members:
   - name: "Xiaoyang Cao"
     group: "Masters Students"
     url: "https://xiaoyangcao1113.github.io/"
-
-  - name: "Zeyuan Li"
-    group: "PhD Students"
-    url: "https://mitsloan.mit.edu/programs/phd/zeyuan-li"
-    coadvisors:
-      - name: "Alessandro Acquisti"
-        url: "https://mitsloan.mit.edu/faculty/directory/alessandro-acquisti"

@@ -31,7 +31,7 @@ papers:
 
   - title: "AI and Collective Decisions: Strengthening Legitimacy and Losers' Consent"
     authors: "Suyash Fulay<sup>‡</sup>, Prerna Ravi<sup>‡</sup>, Emily Kubin, Shrestha Mohanty, <b>Michiel A. Bakker</b>, Deb Roy"
-    venue: "arXiv preprint. 2026."
+    venue: "NSF AI-SDM Workshop. 2026."
     paper_pdf: "https://arxiv.org/abs/2604.05368"
     selected: n
 
@@ -67,7 +67,7 @@ papers:
 
   - title: "Agora: Teaching the Skill of Consensus-Finding with AI Personas Grounded in Human Voice"
     authors: "Prerna Ravi, Om Gokhale, Suyash Fulay, Eugene Yi, Deb Roy, <b>Michiel A. Bakker</b>"
-    venue: "CHI EA'26: Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems. 2026."
+    venue: "arXiv preprint. 2026."
     paper_pdf: "https://arxiv.org/abs/2603.07339"
     selected: n
 
