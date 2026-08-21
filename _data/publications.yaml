@@ -114,7 +114,7 @@ papers:
     selected: n
 
   - title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities"
-    authors: "Gheorghe Comanici, Eric Bieber, ..., <b>Michiel A. Bakker</b>, ..., Yin Li, Chris Hahn (3289 authors ordered randomly)"
+    authors: "Gheorghe Comanici, Eric Bieber, Mike Schaekermann, ..., <b>Michiel A. Bakker</b>, ... (3435 authors, ordered randomly)"
     venue: "arXiv preprint. 2025."
     paper_pdf: "https://arxiv.org/abs/2507.06261"
     selected: y
@@ -192,7 +192,7 @@ papers:
     selected: y
 
   - title: "Scaffolding cooperation in human groups with deep reinforcement learning"
-    authors: "Kevin McKee, Andrea Tacchetti, <b>Michiel A. Bakker</b>, Jan Balaguer, Lucy Campbell-Gillingham, Richard Everett, Matthew M. Botvinick"
+    authors: "Kevin R. McKee, Andrea Tacchetti, <b>Michiel A. Bakker</b>, Jan Balaguer, Lucy Campbell-Gillingham, Richard Everett, Matthew M. Botvinick"
     venue: "Nature Human Behaviour. 2023."
     paper_pdf: "https://psyarxiv.com/cr58a"
     selected: y
@@ -212,7 +212,7 @@ papers:
   - title: "Modelling Cooperation in Network Games with Spatio-Temporal Complexity"
     authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Richard Everett<sup>‡</sup>, Laura Weidinger, Iason Gabriel, William S. Isaac, Joel Z. Leibo, Edward Hughes"
     venue: "AAMAS'21: Conference on Autonomous Agents and Multiagent Systems. 2021."
-    paper_pdf: "https://dl.acm.org/doi/10.5555/3463952.3464123"
+    paper_pdf: "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1455.pdf"
     selected: n
 
   - title: "Beyond Reasonable Doubt: Improving Fairness in Budget-Constrained Decision Making using Confidence Thresholds"
@@ -257,7 +257,7 @@ papers:
     paper_pdf: "https://www.nature.com/articles/s41586-019-1834-7"
     selected: n
 
-  - title: "A 10-qubit solid-state spin register with quantum memory up to one minute"
+  - title: "A Ten-Qubit Solid-State Spin Register with Quantum Memory up to One Minute"
     authors: "Conor E. Bradley, Joe Randall, Mohamed H. Abobeih, Remon C. Berrevoets, Maarten J. Degen, <b>Michiel A. Bakker</b>, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Physical Review X. 2019."
     paper_pdf: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.031045"
