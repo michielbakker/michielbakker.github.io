@@ -192,6 +192,31 @@ title: Home
 </div>
 -->
 
+<!-- ========== LAB ========== -->
+<div class="docs-section" id="lab">
+  <h4>Lab</h4>
+
+  {% assign groups = "Postdocs,PhD Students,Masters Students" | split: "," %}
+  {% for group in groups %}
+    {% assign members = site.data.lab.members | where: "group", group %}
+    {% if members.size > 0 %}
+      <p>
+        <b>{{ group }}</b><br/>
+        {% for member in members %}
+          {% if member.url and member.url != "" %}<a href="{{ member.url }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+          {%- if member.coadvisors and member.coadvisors.size > 0 %} (co-advised with
+            {%- for coadvisor in member.coadvisors -%}
+              {%- unless forloop.first %}{% if forloop.last %} and{% else %},{% endif %}{% endunless %}
+              {% if coadvisor.url and coadvisor.url != "" %}<a href="{{ coadvisor.url }}" target="_blank">{{ coadvisor.name }}</a>{% else %}{{ coadvisor.name }}{% endif %}
+            {%- endfor -%}
+          ){%- endif %}
+          {%- unless forloop.last %}<br/>{% endunless %}
+        {% endfor %}
+      </p>
+    {% endif %}
+  {% endfor %}
+</div>
+
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
   <h4>Experience</h4>

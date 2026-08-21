@@ -1,8 +1,14 @@
 papers:
   - title: "Do Modules Stay in Their Lane? Role Drift in Compound LLM Systems"
-    authors: "Xiaoyang Cao, Sidharth Srinivasan, <b>Michiel A. Bakker</b>"
-    venue: "Preprint. 2026."
-    paper_pdf: "https://michielbakker.github.io/assets/publications/Role_Drift_2026_preprint.pdf"
+    authors: "Xiaoyang Cao, Siddarth Srinivasan, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2607.21627"
+    selected: y
+
+  - title: "A Roadmap to Impactful Pluralistic Alignment Research"
+    authors: "Elinor Poole-Dayan, Jillian Fisher, Atoosa Kasirzadeh, Jacob Andreas, Mitchell Gordon, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2607.22305"
     selected: y
 
   - title: "Robust AI Personalization Controls: The Human Context Protocol"
@@ -13,8 +19,14 @@ papers:
 
   - title: "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce"
     authors: "Zeyuan Li, Lukas Petersson, Alessandro Acquisti, <b>Michiel A. Bakker</b>"
-    venue: "Preprint. 2026."
-    paper_pdf: "https://michielbakker.github.io/assets/publications/Vending_2026_preprint.pdf"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2608.14825"
+    selected: y
+
+  - title: "Belief Engine: Configurable and Inspectable Stance Dynamics in Multi-Agent LLM Deliberation"
+    authors: "Joshua C. Yang, Maurice Flechtner, Damian Dailisan, <b>Michiel A. Bakker</b>"
+    venue: "arXiv preprint. 2026."
+    paper_pdf: "https://arxiv.org/abs/2605.15343"
     selected: y
 
   - title: "AI and Collective Decisions: Strengthening Legitimacy and Losers' Consent"
@@ -45,7 +57,7 @@ papers:
     authors: "Michelle Vaccaro, Jaeyoon Song, Abdullah Almaatouq, <b>Michiel A. Bakker</b>"
     venue: "arXiv preprint. 2026."
     paper_pdf: "https://arxiv.org/abs/2603.26676"
-    selected: n
+    selected: y
 
   - title: "The AI Proxy Advisor"
     authors: "<b>Michiel A. Bakker</b>, Maxime Couvert, Sercan Demir, Roni Michaely"
@@ -77,6 +89,12 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2509.24159"
     selected: n
 
+  - title: "AI and the Future of Digital Public Squares"
+    authors: "Beth Goldberg, Diana Acosta-Navas, <b>Michiel A. Bakker</b>, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang"
+    venue: "Collective Intelligence, 5(2). 2026."
+    paper_pdf: "https://doi.org/10.1177/26339137261459441"
+    selected: n
+
   - title: "The Impact of Advanced AI Systems on Democracy"
     authors: "Christopher Summerfield, Lisa P. Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Hélène Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
     venue: "Nature Human Behaviour, 9, 2420–2430. 2025."
@@ -97,7 +115,7 @@ papers:
 
   - title: "Scaling Human Judgment in Community Notes with LLMs"
     authors: "Haiwen Li, Soham De, Manon Revel, Andreas Haupt, Brad Miller, Keith Coleman, Jay Baxter, Martin Saveski, <b>Michiel A. Bakker</b>"
-    venue: "Journal of Online Trust and Safety (2025)"
+    venue: "Journal of Online Trust and Safety, 3(1). 2025."
     paper_pdf: "https://arxiv.org/abs/2506.24118"
     selected: y
 
@@ -148,12 +166,6 @@ papers:
     venue: "WWW'25: Proceedings of the ACM Web Conference 2025, 3751–3761. 2025."
     paper_pdf: "https://arxiv.org/abs/2411.06116"
     selected: y
-
-  - title: "AI and the Future of Digital Public Squares"
-    authors: "Beth Goldberg, Diana Acosta-Navas, <b>Michiel A. Bakker</b>, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang"
-    venue: "arXiv preprint. 2024."
-    paper_pdf: "https://arxiv.org/abs/2412.09988"
-    selected: n
 
   - title: "AI can help humans find common ground in democratic deliberation"
     authors: "Michael Henry Tessler<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
@@ -207,6 +219,12 @@ papers:
     authors: "Alejandro Noriega-Campero, Bernardo Garcia Bulle-Bueno, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Alex Pentland"
     venue: "FAccT<sup>‡</sup>'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3351095.3375784"
+    selected: n
+
+  - title: "Assessing Disease Exposure Risk with Location Data: A Proposal for Cryptographic Preservation of Privacy"
+    authors: "Alex Berke, <b>Michiel A. Bakker</b>, Praneeth Vepakomma, Kent Larson, Alex Pentland"
+    venue: "arXiv preprint. 2020."
+    paper_pdf: "https://arxiv.org/abs/2003.14412"
     selected: n
 
   - title: "VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository"
@@ -275,7 +293,7 @@ papers:
     paper_pdf: ""
     selected: n
 
-  - title: "Validity of the single-particle description and noise resilience for multielectron quantum dots"
+  - title: "Validity of the single-particle description and charge noise resilience for multielectron quantum dots"
     authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Sebastian Mehl<sup>‡</sup>, Tuukka Hiltunen, David P. DiVincenzo"
     venue: "Physical Review B. 2015."
     paper_pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.155425"

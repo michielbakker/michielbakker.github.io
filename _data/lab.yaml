@@ -1,0 +1,46 @@
+# `group` sections the lab listing on the homepage.
+# `url` turns the name into a link; leave "" for plain text.
+# `coadvisors` is optional and renders as "(co-advised with ...)".
+members:
+  - name: "Joshua Yang"
+    group: "Postdocs"
+    url: "https://joshuacyang.com/"
+
+  - name: "Luke Thorburn"
+    group: "Postdocs"
+    url: "https://lukethorburn.com/"
+
+  - name: "Elinor Poole-Dayan"
+    group: "PhD Students"
+    url: "https://elinorp-d.github.io/"
+    coadvisors:
+      - name: "Mitchell Gordon"
+        url: "https://mgordon.me/"
+      - name: "Jacob Andreas"
+        url: "https://www.mit.edu/~jda/"
+
+  - name: "Haiwen Li"
+    group: "PhD Students"
+    url: "https://haiwenli.dev/"
+
+  - name: "Hope Schroeder"
+    group: "PhD Students"
+    url: "https://www.hopeschroeder.com/"
+    coadvisors:
+      - name: "Deb Roy"
+        url: "https://www.media.mit.edu/people/dkroy/overview/"
+
+  - name: "Sulekha Kishore"
+    group: "PhD Students"
+    url: "https://idss.mit.edu/staff/sulekha-kishore/"
+
+  - name: "Xiaoyang Cao"
+    group: "Masters Students"
+    url: "https://xiaoyangcao1113.github.io/"
+
+  - name: "Zeyuan Li"
+    group: "PhD Students"
+    url: "https://mitsloan.mit.edu/programs/phd/zeyuan-li"
+    coadvisors:
+      - name: "Alessandro Acquisti"
+        url: "https://mitsloan.mit.edu/faculty/directory/alessandro-acquisti"
