@@ -48,13 +48,13 @@
     .portrait .eye, .portrait .beam { position: absolute; pointer-events: none; opacity: 0; }
     .portrait .eye {
       width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%;
-      background: radial-gradient(circle, #fff 0%, #ff3b30 45%, rgba(255,59,48,0) 72%);
+      background: radial-gradient(circle, #fff 0%, #1a5fd4 45%, rgba(26,95,212,0) 72%);
       transition: opacity .45s ease;
     }
     .portrait .beam {
       height: 2px; width: 0; transform-origin: left center; border-radius: 2px;
-      background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(255,59,48,.9) 12%, rgba(255,59,48,.35) 65%, rgba(255,59,48,0));
-      box-shadow: 0 0 6px rgba(255,59,48,.75), 0 0 18px rgba(255,59,48,.4);
+      background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(26,95,212,.9) 12%, rgba(26,95,212,.35) 65%, rgba(26,95,212,0));
+      box-shadow: 0 0 6px rgba(26,95,212,.75), 0 0 18px rgba(26,95,212,.4);
       transition: width .28s cubic-bezier(.2,.8,.3,1), opacity .18s ease;
     }
     .portrait .eye-l  { left: 26.4%; top: 36.3%; }
@@ -63,6 +63,15 @@
     .portrait .beam-r { left: 40.4%; top: 34.4%; transform: rotate(-153deg); }
     .portrait.charging .eye { opacity: 1; }
     .portrait.firing .beam { opacity: 1; width: 330px; }
+    @media (prefers-color-scheme: dark) {
+      .portrait .eye {
+        background: radial-gradient(circle, #fff 0%, #7aa7f5 45%, rgba(122,167,245,0) 72%);
+      }
+      .portrait .beam {
+        background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(122,167,245,.92) 12%, rgba(122,167,245,.38) 65%, rgba(122,167,245,0));
+        box-shadow: 0 0 6px rgba(122,167,245,.8), 0 0 18px rgba(122,167,245,.45);
+      }
+    }
     @media (prefers-reduced-motion: reduce) {
       .portrait .eye, .portrait .beam { transition: none; }
     }
@@ -223,8 +232,8 @@
       if (window.matchMedia("(hover: none)").matches) return;   // leave touch alone
       var charge, fire;
       p.addEventListener("mouseenter", function () {
-        charge = setTimeout(function () { p.classList.add("charging"); }, 620);
-        fire   = setTimeout(function () { p.classList.add("firing"); }, 900);
+        charge = setTimeout(function () { p.classList.add("charging"); }, 1400);
+        fire   = setTimeout(function () { p.classList.add("firing"); }, 1750);
       });
       p.addEventListener("mouseleave", function () {
         clearTimeout(charge); clearTimeout(fire);
