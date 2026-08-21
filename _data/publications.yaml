@@ -104,7 +104,7 @@ papers:
   - title: "The Impact of Advanced AI Systems on Democracy"
     authors: "Christopher Summerfield, Lisa P. Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Hélène Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
     venue: "Nature Human Behaviour, 9, 2420–2430. 2025."
-    paper_pdf: "https://www.nature.com/articles/s41562-025-02294-1"
+    paper_pdf: "https://www.nature.com/articles/s41562-025-02309-z"
     selected: y
 
   - title: "Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs"
@@ -131,8 +131,8 @@ papers:
     paper_pdf: "https://democracylevels.org/"
     selected: y
 
-  - title: "Full-Stack Alignment: Co-Aligning AI and Institutions with Thicker Models of Value"
-    authors: "Ryan Lowe, Joe Edelman, Tan Zhi-Xuan, Oliver Klingefjord, Ellie Hain, Vincent Wang, Atrisha Sarkar, <b>Michiel A. Bakker</b>, Fazl Barez, Matija Franklin, Andreas Haupt, Jobst Heitzig, Wesley H Holliday, Julian Jara-Ettinger, Atoosa Kasirzadeh, Ryan Othniel Kearns, James Ravi Kirkpatrick, Andrew Koh, Joel Lehman, Sydney Levine, Manon Revel, Ivan Vendrov"
+  - title: "Full-Stack Alignment: Co-Aligning AI and Institutions with Thick Models of Value"
+    authors: "Joe Edelman, Tan Zhi-Xuan, Ryan Lowe, Oliver Klingefjord, Vincent Wang-Mascianica, Matija Franklin, Ryan Othniel Kearns, Ellie Hain, Atrisha Sarkar, <b>Michiel A. Bakker</b>, Fazl Barez, David Duvenaud, Jakob Foerster, Iason Gabriel, Joseph Gubbels, Bryce Goodman, Andreas Haupt, Jobst Heitzig, Julian Jara-Ettinger, Atoosa Kasirzadeh, James Ravi Kirkpatrick, Andrew Koh, W. Bradley Knox, Philipp Koralus, Joel Lehman, Sydney Levine, Samuele Marro, Manon Revel, Toby Shorin, Morgan Sutherland, Michael Henry Tessler, Ivan Vendrov, James Wilken-Smith"
     venue: "Preprint. 2025."
     paper_pdf: "https://www.full-stack-alignment.ai/"
     selected: n
@@ -156,9 +156,9 @@ papers:
     selected: y
 
   - title: "Perceptual Interventions Ameliorate Statistical Discrimination in Learning Agents"
-    authors: "Edgar A. Duéñez-Guzmán, Raluca Comanescu, Yiran Mao, Kevin R. McKee, Ben Coppin, Silvia Chiappa, Alexander Sasha Vezhnevets, <b>Michiel A. Bakker</b>, Yoram Bachrach, Suzanne Sadedin, William Isaac, Karl Tuyls, Joel Z. Leibo"
+    authors: "Edgar A. Duéñez-Guzmán, Ramona Comanescu, Yiran Mao, Kevin R. McKee, Ben Coppin, Suzanne Sadedin, Silvia Chiappa, Alexander S. Vezhnevets, <b>Michiel A. Bakker</b>, Yoram Bachrach, William Isaac, Karl Tuyls, Joel Z. Leibo"
     venue: "Proceedings of the National Academy of Sciences (PNAS), 122(25), e2319933121. 2025."
-    paper_pdf: "https://arxiv.org/abs/2110.11404"
+    paper_pdf: "https://doi.org/10.1073/pnas.2319933121"
     selected: n
 
   - title: "Can AI Mediation Improve Democratic Deliberation?"
@@ -217,12 +217,12 @@ papers:
 
   - title: "Beyond Reasonable Doubt: Improving Fairness in Budget-Constrained Decision Making using Confidence Thresholds"
     authors: "<b>Michiel A. Bakker</b>, Duy Patrick Tu, Krishna P. Gummadi, Alex Pentland, Kush R. Varshney, Adrian Weller"
-    venue: "AIES'21: Fifth AAAI/ACM Conference on AI, Ethics, and Society. 2021."
+    venue: "AIES'21: Fourth AAAI/ACM Conference on AI, Ethics, and Society. 2021."
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3461702.3462575"
     selected: y
 
   - title: "Algorithmic Targeting of Social Policies: Fairness, Accuracy, and Distributed Governance"
-    authors: "Alejandro Noriega-Campero, Bernardo Garcia Bulle-Bueno, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Alex Pentland"
+    authors: "Alejandro Noriega-Campero, Bernardo Garcia-Bulle, Luis Fernando Cantu, <b>Michiel A. Bakker</b>, Luis Tejerina, Alex Pentland"
     venue: "FAccT<sup>‡</sup>'20: ACM Conference on Fairness, Accountability, and Transparency. 2020."
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3351095.3375784"
     selected: n
@@ -240,7 +240,7 @@ papers:
     selected: n
 
   - title: "Sherlock: A Deep Learning Approach to Semantic Data Type Detection"
-    authors: "Madelon Hulsebos<sup>‡</sup>, Kevin Z. Hu<sup>‡</sup>, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, Tim Kraska, César A Hidalgo, Çagatay Demiralp"
+    authors: "Madelon Hulsebos<sup>‡</sup>, Kevin Z. Hu<sup>‡</sup>, <b>Michiel A. Bakker</b>, Emanuel Zgraggen, Arvind Satyanarayan, Tim Kraska, Çagatay Demiralp, César A. Hidalgo"
     venue: "KDD'19: Conference on Knowledge Discovery and Data Mining. 2019."
     paper_pdf: "https://dl.acm.org/citation.cfm?doid=3292500.3330993"
     selected: n
@@ -252,13 +252,13 @@ papers:
     selected: n
 
   - title: "Atomic-scale imaging of a 27-nuclear-spin cluster using a quantum sensor"
-    authors: "Mohamed H. Abobeih, Joe Randall, Conor E. Bradley, Hans P. Bartling, <b>Michiel A. Bakker</b>, Maarten J. Degen, Mark Markham, Daniel J. Twitchen, Tim H. Taminiau"
+    authors: "Mohamed H. Abobeih, Joe Randall, Conor E. Bradley, Hans P. Bartling, <b>Michiel A. Bakker</b>, Maarten J. Degen, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Nature. 2019."
     paper_pdf: "https://www.nature.com/articles/s41586-019-1834-7"
     selected: n
 
   - title: "A 10-qubit solid-state spin register with quantum memory up to one minute"
-    authors: "Conor E. Bradley, Joe Randall, Mohamed H. Abobeih, Remon C. Berrevoets, Maarten J. Degen, <b>Michiel A. Bakker</b>, Mark Markham, Daniel J. Twitchen, Tim H. Taminiau"
+    authors: "Conor E. Bradley, Joe Randall, Mohamed H. Abobeih, Remon C. Berrevoets, Maarten J. Degen, <b>Michiel A. Bakker</b>, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Physical Review X. 2019."
     paper_pdf: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.031045"
     selected: n
@@ -277,18 +277,18 @@ papers:
 
   - title: "Active Fairness in Algorithmic Decision Making"
     authors: "Alejandro Noriega-Campero<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Bernardo Garcia-Bulle, Alex Pentland"
-    venue: "AIES'19: Third AAAI/ACM Conference on AI, Ethics, and Society. 2019."
+    venue: "AIES'19: Second AAAI/ACM Conference on AI, Ethics, and Society. 2019."
     paper_pdf: "https://dl.acm.org/doi/10.1145/3306618.3314277"
     selected: y
 
   - title: "On Fairness in Budget-Constrained Decision Making"
-    authors: "<b>Michiel A. Bakker</b>, Humberto Riverón Valdés, Duy Patrick Tu, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
+    authors: "<b>Michiel A. Bakker</b>, Alejandro Noriega-Campero, Duy Patrick Tu, Prasanna Sattigeri, Kush R. Varshney, Alex Pentland"
     venue: "KDD Workshop on Explainable AI. 2019."
     paper_pdf: "https://krvarshney.github.io/pubs/BakkerNTSVP_kddxai2019.pdf"
     selected: n
 
   - title: "One-second coherence for a single electron spin coupled to a multi-qubit nuclear-spin environment"
-    authors: "Mohamed H. Abobeih, Julia Cramer, <b>Michiel A. Bakker</b>, Norbert Kalb, Daniel J. Twitchen, Matthew Markham, Tim H. Taminiau"
+    authors: "Mohamed H. Abobeih, Julia Cramer, <b>Michiel A. Bakker</b>, Norbert Kalb, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
     venue: "Nature Communications. 2018."
     paper_pdf: "https://www.nature.com/articles/s41467-018-04916-z"
     selected: n
@@ -300,13 +300,13 @@ papers:
     selected: n
 
   - title: "Validity of the single-particle description and charge noise resilience for multielectron quantum dots"
-    authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Sebastian Mehl<sup>‡</sup>, Tuukka Hiltunen, David P. DiVincenzo"
+    authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Sebastian Mehl<sup>‡</sup>, Tuukka Hiltunen, Ari Harju, David P. DiVincenzo"
     venue: "Physical Review B. 2015."
     paper_pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.155425"
     selected: n
 
-  - title: "Tipsy single soft photon detector and Trixy ultrafast tracking detector"
-    authors: "Harry van der Graaf, <b>Michiel A. Bakker</b>, Hong W. Chan, Eduardo Charbon, Fabio Santagata, Pasqualina M. Sarro, Dennis R. Schaart"
+  - title: "The Tipsy Single Soft Photon Detector and the Trixy Ultrafast Tracking Detector"
+    authors: "Harry van der Graaf, <b>Michiel A. Bakker</b>, Hong W. Chan, Edoardo Charbon, Fabio Santagata, Pasqualina M. Sarro, Dennis R. Schaart"
     venue: "Journal of Instrumentation. 2013."
     paper_pdf: "http://iopscience.iop.org/article/10.1088/1748-0221/8/01/C01036/meta"
     selected: n
