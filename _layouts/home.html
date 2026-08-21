@@ -38,9 +38,33 @@
     /* ---------- header ---------- */
     header { padding: 3.5rem 0 2.5rem; }
     .id { display: flex; gap: 2rem; align-items: center; }
+    .id .portrait { position: relative; flex: none; }
     .id img {
-      width: 168px; height: auto; flex: none; display: block;
+      width: 168px; height: auto; display: block;
       aspect-ratio: 700 / 805; object-fit: cover;
+    }
+    /* Easter egg: rest on the portrait for a moment and the eyes charge up.
+       Deliberately slow, so a cursor drifting past never sets it off. */
+    .portrait .eye, .portrait .beam { position: absolute; pointer-events: none; opacity: 0; }
+    .portrait .eye {
+      width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%;
+      background: radial-gradient(circle, #fff 0%, #ff3b30 45%, rgba(255,59,48,0) 72%);
+      transition: opacity .45s ease;
+    }
+    .portrait .beam {
+      height: 2px; width: 0; transform-origin: left center; border-radius: 2px;
+      background: linear-gradient(90deg, rgba(255,255,255,.95), rgba(255,59,48,.9) 12%, rgba(255,59,48,.35) 65%, rgba(255,59,48,0));
+      box-shadow: 0 0 6px rgba(255,59,48,.75), 0 0 18px rgba(255,59,48,.4);
+      transition: width .28s cubic-bezier(.2,.8,.3,1), opacity .18s ease;
+    }
+    .portrait .eye-l  { left: 26.4%; top: 36.3%; }
+    .portrait .eye-r  { left: 40.4%; top: 34.4%; }
+    .portrait .beam-l { left: 26.4%; top: 36.3%; transform: rotate(-27deg); }
+    .portrait .beam-r { left: 40.4%; top: 34.4%; transform: rotate(-27deg); }
+    .portrait.charging .eye { opacity: 1; }
+    .portrait.firing .beam { opacity: 1; width: 330px; }
+    @media (prefers-reduced-motion: reduce) {
+      .portrait .eye, .portrait .beam { transition: none; }
     }
     .id h1 { margin: 0 0 .5rem; font-size: 2.6rem; font-weight: 800; letter-spacing: -.035em; line-height: 1.05; }
     .id .role { margin: 0; color: var(--soft); font-size: 1.02rem; }
@@ -137,7 +161,13 @@
   <div class="wrap">
     <header>
       <div class="id">
-        <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic_alt }}" alt="{{ site.data.main_info.name }}" width="700" height="805">
+        <div class="portrait">
+          <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic_alt }}" alt="{{ site.data.main_info.name }}" width="700" height="805">
+          <span class="eye eye-l" aria-hidden="true"></span>
+          <span class="eye eye-r" aria-hidden="true"></span>
+          <span class="beam beam-l" aria-hidden="true"></span>
+          <span class="beam beam-r" aria-hidden="true"></span>
+        </div>
         <div>
           <h1>{{ site.data.main_info.name }}</h1>
           <p class="role">{{ site.data.main_info.title }}</p>
@@ -184,6 +214,34 @@
   </div>
 
   <script>
+    // Linger on the portrait and the eyes charge, then fire. A cursor drifting
+    // past does nothing — the delay is the whole point.
+    (function () {
+      var p = document.querySelector(".portrait");
+      if (!p) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (window.matchMedia("(hover: none)").matches) return;   // leave touch alone
+      var charge, fire;
+      p.addEventListener("mouseenter", function () {
+        charge = setTimeout(function () { p.classList.add("charging"); }, 620);
+        fire   = setTimeout(function () { p.classList.add("firing"); }, 900);
+      });
+      p.addEventListener("mouseleave", function () {
+        clearTimeout(charge); clearTimeout(fire);
+        p.classList.remove("charging", "firing");
+      });
+    })();
+
+    console.log(
+      "%cHello.%c You opened the console, which I respect.\n" +
+      "%cThe lab is looking for students and postdocs — [last name] [at] mit [dot] edu.\n" +
+      "%cAlso, try resting your cursor on the photo for a second.",
+      "font:600 14px Manrope,sans-serif;color:#1a5fd4",
+      "font:14px Manrope,sans-serif;color:#16233b",
+      "font:13px Manrope,sans-serif;color:#46556e",
+      "font:12px Manrope,sans-serif;color:#8b9098"
+    );
+
     // Highlight the section currently in view.
     var links = [].slice.call(document.querySelectorAll('nav a'));
     var obs = new IntersectionObserver(function (entries) {
