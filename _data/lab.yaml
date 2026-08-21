@@ -25,19 +25,6 @@ members:
     group: "PhD Students"
     url: "https://haiwenli.dev/"
 
-  - name: "Hope Schroeder"
-    group: "PhD Students"
-    url: "https://www.hopeschroeder.com/"
-    coadvisors:
-      - name: "Deb Roy"
-        url: "https://www.media.mit.edu/people/dkroy/overview/"
-
-  - name: "Prerna Ravi"
-    group: "PhD Students"
-    url: "https://prernaravi.com/"
-    coadvisors:
-      - name: "Hal Abelson"
-        url: "https://groups.csail.mit.edu/mac/users/hal/"
 
   - name: "Robin Na"
     group: "PhD Students"
