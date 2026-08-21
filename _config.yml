@@ -5,12 +5,6 @@ baseurl: ""
 google_analytics: G-PEJ2CJBMYP
 url: "https://miba.dev"
 
-collections:
-  projects:
-    # Inherited from the template these pages came with; they describe
-    # someone else's projects, so they are not published.
-    output: false
-
 plugins:
   - jekyll-sitemap
 
