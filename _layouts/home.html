@@ -113,16 +113,6 @@
     }
     section p { margin: 0 0 1rem; }
 
-    /* ---------- tabs ---------- */
-    .tabs { display: inline-flex; gap: .25rem; background: var(--panel); border-radius: 999px; padding: .25rem; margin-bottom: 1.75rem; }
-    .tabs button {
-      font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer;
-      border: 0; background: transparent; color: var(--soft);
-      padding: .4rem 1.1rem; border-radius: 999px; transition: all .15s ease;
-    }
-    .tabs button[aria-selected="true"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.1); }
-    .pane[hidden] { display: none; }
-
     /* ---------- publications ---------- */
     .pub { padding: .95rem 0; border-bottom: 1px solid var(--rule); }
     .pub:last-child { border-bottom: 0; }
@@ -253,17 +243,6 @@
       label();
     })();
 
-    // Publication tabs.
-    document.querySelectorAll('.tabs').forEach(function (tabs) {
-      tabs.addEventListener('click', function (e) {
-        var btn = e.target.closest('button'); if (!btn) return;
-        tabs.querySelectorAll('button').forEach(function (b) {
-          var on = b === btn;
-          b.setAttribute('aria-selected', on);
-          document.getElementById(b.dataset.pane).hidden = !on;
-        });
-      });
-    });
     // Highlight the section currently in view.
     var links = [].slice.call(document.querySelectorAll('nav a'));
     var obs = new IntersectionObserver(function (entries) {

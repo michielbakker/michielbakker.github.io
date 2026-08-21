@@ -60,19 +60,7 @@ title: Home
   <p class="note lead">Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>.<br/>
   <sup>&Dagger;</sup> indicates equal contribution.</p>
 
-  <div class="tabs" role="tablist">
-    <button role="tab" aria-selected="true" data-pane="pane-selected">Selected</button>
-    <button role="tab" aria-selected="false" data-pane="pane-all">All</button>
-  </div>
-
-  <div class="pane" id="pane-selected">
-    {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-    {% for paper in selected_papers %}{% include paper_card.html paper=paper %}{% endfor %}
-  </div>
-
-  <div class="pane" id="pane-all" hidden>
-    {% for paper in site.data.publications.papers %}{% include paper_card.html paper=paper %}{% endfor %}
-  </div>
+  {% for paper in site.data.publications.papers %}{% include paper_card.html paper=paper %}{% endfor %}
 </section>
 
 <section id="experience">
