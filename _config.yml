@@ -13,3 +13,10 @@ collections:
 
 plugins:
   - jekyll-sitemap
+
+defaults:
+  # Unlinked leftover PDFs from the template; don't advertise them.
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
