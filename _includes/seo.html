@@ -1,0 +1,60 @@
+{% assign info = site.data.main_info %}
+{% assign page_url = site.url | append: page.permalink | default: site.url %}
+{% assign img_url = site.url | append: info.og_image %}
+<meta name="description" content="{{ info.description }}">
+<link rel="canonical" href="{{ page_url }}">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="{{ info.name }}">
+<meta property="og:title" content="{{ info.name }} — Assistant Professor, MIT">
+<meta property="og:description" content="{{ info.description }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:image" content="{{ img_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ info.name }} — Assistant Professor at MIT, Senior Research Scientist at Google DeepMind">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ info.name }} — Assistant Professor, MIT">
+<meta name="twitter:description" content="{{ info.description }}">
+<meta name="twitter:image" content="{{ img_url }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ info.name }}",
+  "givenName": "Michiel",
+  "familyName": "Bakker",
+  "url": "{{ site.url }}",
+  "image": "{{ img_url }}",
+  "description": "{{ info.description }}",
+  "jobTitle": ["Assistant Professor", "Senior Research Scientist"],
+  "worksFor": [
+    { "@type": "CollegeOrUniversity", "name": "Massachusetts Institute of Technology", "url": "https://www.mit.edu/" },
+    { "@type": "Organization", "name": "Google DeepMind", "url": "https://deepmind.com/" }
+  ],
+  "affiliation": [
+    { "@type": "Organization", "name": "MIT Institute for Data, Systems, and Society", "url": "https://idss.mit.edu/" },
+    { "@type": "Organization", "name": "MIT Sloan School of Management", "url": "https://mitsloan.mit.edu/" },
+    { "@type": "Organization", "name": "MIT Center for Constructive Communication", "url": "https://www.ccc.mit.edu/" }
+  ],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Massachusetts Institute of Technology", "url": "https://www.mit.edu/" },
+    { "@type": "CollegeOrUniversity", "name": "Delft University of Technology", "url": "https://www.tudelft.nl/" }
+  ],
+  "knowsAbout": [
+    "Large language models",
+    "AI safety",
+    "Societal impacts of AI",
+    "Human-computer interaction",
+    "Collective decision-making"
+  ],
+  "sameAs": [
+    "{{ info.google_scholar }}",
+    "{{ info.bsky }}",
+    "{{ info.twitter }}",
+    "{{ info.linkedin }}"
+  ]
+}
+</script>

@@ -6,13 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Michiel Bakker">
-  <meta name="author" content="Michiel Bakker">
-  <meta property="og:title" content="Michiel Bakker" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.miba.dev" />
-  <meta property="og:site_name" content="Michiel Bakker" />
-  <link rel="canonical" href="http://www.miba.dev" />
+  <meta name="author" content="{{ site.data.main_info.name }}">
+  {% include seo.html %}
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -70,7 +65,7 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt="{{ site.data.main_info.name }}"></a>
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
