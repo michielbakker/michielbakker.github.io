@@ -1,0 +1,7 @@
+{% if include.paper.paper_pdf and include.paper.paper_pdf != "" %}
+<div class="pub">
+  <div class="t">{% if include.paper.paper_pdf and include.paper.paper_pdf != "" %}<a href="{{ include.paper.paper_pdf }}" target="_blank" rel="noopener">{{ include.paper.title }}</a>{% else %}{{ include.paper.title }}{% endif %}</div>
+  <div class="a">{{ include.paper.authors }}</div>
+  <div class="v">{{ include.paper.venue }}</div>
+</div>
+{% endif %}

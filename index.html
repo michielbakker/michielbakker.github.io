@@ -1,249 +1,96 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
-<!-- ========== BIO ========== -->
-<div class="docs-section" id="bio">
-  <p>
-    Hi! I'm an Assistant Professor at MIT with appointments in the 
-    <a href="https://idss.mit.edu/" target="_blank">Institute for Data, Systems, and Society (IDSS)</a>, 
-    the <a href="https://mitsloan.mit.edu/" target="_blank">business school (Sloan)</a>, and the 
-    <a href="https://www.ccc.mit.edu/" target="_blank">Center for Constructive Communication (CCC)</a> in the MIT Media Lab. 
-    I'm also a Senior Research Scientist at <a href="http://deepmind.com/" target="_blank">Google DeepMind</a>.
-  </p>
+<section id="bio">
+  {% include bio.html %}
+</section>
+
+<section id="lab">
+  <h2>Lab</h2>
 
   <p>
-    My research focuses on large language models (LLMs), AI safety, the societal impacts of AI, 
-    and AI's role in both human-human and human-computer interaction. If you're a student and would like 
-    to work with me, I'd love to hear from you via [last name] [at] mit [dot] edu. Please put "[application]" in the subject 
-    line as well as your name.
+    We work on AI alignment, AI governance and oversight, and AI for collective decision-making and
+    epistemics. I work with students and postdocs across EECS, IDSS, and Sloan IT. If you'd like to work
+    with me, I'd encourage you to apply to those programs and reach out via [last name] [at] mit [dot] edu.
+    Please put "[application]" in the subject line.
   </p>
-
-  <p>
-    Previously, I was a Computer Science PhD student at MIT, working with 
-    <a href="https://www.media.mit.edu/people/sandy/overview/" target="_blank">Alex "Sandy" Pentland</a> at the 
-    <a href="https://www.media.mit.edu/" target="_blank">MIT Media Lab</a>. I also hold a bachelor's and master's degree in 
-    physics from TU Delft, where I worked on quantum computing at 
-    <a href="https://qutech.nl/" target="_blank">QuTech</a> and <a href="https://quantum-computing.ibm.com/" target="_blank">IBM Quantum</a>.
-  </p>
-</div>
-
-<!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
-  <h4>Publications</h4>
-
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
-  </p>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-
-<!-- ========== PROJECTS ========== 
-<div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
-  </ul>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="projects-selected">
-      {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
-      {% for project in selected_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
--->
-
-<!-- ========== LAB ========== -->
-<div class="docs-section" id="lab">
-  <h4>Lab</h4>
-
   {% assign groups = "Postdocs,PhD Students,Masters Students" | split: "," %}
   {% for group in groups %}
     {% assign members = site.data.lab.members | where: "group", group %}
     {% if members.size > 0 %}
-      <p>
-        <b>{{ group }}</b><br/>
-        {% for member in members %}
-          {% if member.url and member.url != "" %}<a href="{{ member.url }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
-          {%- if member.coadvisors and member.coadvisors.size > 0 %} (co-advised with
-            {%- for coadvisor in member.coadvisors -%}
-              {%- unless forloop.first %}{% if forloop.last %} and{% else %},{% endif %}{% endunless %}
-              {% if coadvisor.url and coadvisor.url != "" %}<a href="{{ coadvisor.url }}" target="_blank">{{ coadvisor.name }}</a>{% else %}{{ coadvisor.name }}{% endif %}
-            {%- endfor -%}
-          ){%- endif %}
-          {%- unless forloop.last %}<br/>{% endunless %}
-        {% endfor %}
-      </p>
+      <div class="group">
+        <div class="label">{{ group }}</div>
+        <div class="people">
+          {% for member in members %}
+            {% if member.url and member.url != "" %}<a href="{{ member.url }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+            {%- if member.coadvisors and member.coadvisors.size > 0 %}<span class="co"> (co-advised with
+              {%- for coadvisor in member.coadvisors -%}
+                {%- unless forloop.first %}{% if forloop.last %} and{% else %},{% endif %}{% endunless %}
+                {% if coadvisor.url and coadvisor.url != "" %}<a href="{{ coadvisor.url }}" target="_blank" rel="noopener">{{ coadvisor.name }}</a>{% else %}{{ coadvisor.name }}{% endif %}
+              {%- endfor -%}
+            )</span>{%- endif %}
+            {%- unless forloop.last %}<br/>{% endunless %}
+          {% endfor %}
+        </div>
+      </div>
     {% endif %}
   {% endfor %}
-</div>
 
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Experience</h4>
+  <p class="note">Our work is funded by the <a href="https://www.cooperativeai.com/" target="_blank" rel="noopener">Cooperative AI Foundation</a>, the <a href="https://www.flf.org/" target="_blank" rel="noopener">Future of Life Foundation</a>, the <a href="https://foresight.org/" target="_blank" rel="noopener">Foresight Institute</a>, and the Eric and Wendy Schmidt Fund for Strategic Innovation.</p>
+</section>
 
-  <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+<section id="policy">
+  <h2>Policy</h2>
+  <p>
+    I care a lot about making the transition to a post-AGI world go well, and I think policy work is a
+    big part of that. I co-led the <a href="https://aiplan.nl/deltaplan" target="_blank" rel="noopener">Nationaal AI Deltaplan</a>,
+    written at the request of the Dutch <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-economische-zaken" target="_blank" rel="noopener">Ministry of Economic Affairs</a>,
+    and I co-wrote <a href="https://europe2031.ai/" target="_blank" rel="noopener">Europe 2031</a>
+    (<a href="https://europe2031.ai/audio" target="_blank" rel="noopener">audio version</a>), a scenario about what
+    getting AI wrong would mean for Europe. It has been read by over a million people and was covered by
+    the Economist, the Guardian, Bloomberg, and the New York Times, as well as many national media
+    outlets across Europe.
+  </p>
+</section>
 
-  <!-- The Timeline -->
-  <ul class="timeline">
+<section id="publications">
+  <h2>Publications</h2>
+
+  <p class="note lead">Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>.<br/>
+  <sup>&Dagger;</sup> indicates equal contribution.</p>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-pane="pane-selected">Selected</button>
+    <button role="tab" aria-selected="false" data-pane="pane-all">All</button>
+  </div>
+
+  <div class="pane" id="pane-selected">
+    {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+    {% for paper in selected_papers %}{% include paper_card.html paper=paper %}{% endfor %}
+  </div>
+
+  <div class="pane" id="pane-all" hidden>
+    {% for paper in site.data.publications.papers %}{% include paper_card.html paper=paper %}{% endfor %}
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
     {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      <div class="tl {{ exp.category }}">
+        <div class="when">{{ exp.time }}</div>
+        <div class="what">{{ exp.title }} <span class="where">&middot; {{ exp.place }}</span></div>
+        <div class="sub">{{ exp.subtitle }}</div>
       </div>
-    </li>
     {% endfor %}
-  </ul>
-</div>
+  </div>
+</section>
 
-<div class="docs-section" id="template">
-  <h4>Website Design</h4>
-  Based on the homepage of my <a href="https://arxiv.org/pdf/2411.06116" target="_blank">collaborator</a> (and friend!) <a href="https://faculty.washington.edu/msaveski/" target="_blank">Martin Saveski</a>.
-</div>  
+<section id="design">
+  <h2>Website Design</h2>
+  <p>Based on the homepage of my <a href="https://arxiv.org/pdf/2411.06116" target="_blank" rel="noopener">collaborator</a> (and friend!)
+  <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener">Martin Saveski</a> and my friend
+  <a href="https://jacquescarolan.github.io/" target="_blank" rel="noopener">Jacques Carolan</a>.</p>
+</section>

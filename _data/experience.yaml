@@ -3,13 +3,13 @@ experiences:
 - place: "MIT"
   time: "2024 - present"
   title: "Assistant Professor"
-  subtitle: "Sloan School of Management <br/> Institute for Data, Systems, and Society (IDSS)"
+  subtitle: "Sloan School of Management <br/> Institute for Data, Systems, and Society (IDSS) <br/> Laboratory for Information and Decision Systems (LIDS)"
   category: "work"
 
 - place: "Google DeepMind"
-  time: "2021 - present"
+  time: "2021 - 2026"
   title: "Senior Research Scientist"
-  subtitle: "AI Safety, Large Language Models"
+  subtitle: "Post-training and safety for the Gemini models"
   category: "work"
 
 - place: "MIT"

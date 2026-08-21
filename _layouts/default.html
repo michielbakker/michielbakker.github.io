@@ -96,11 +96,20 @@
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#lab" | prepend: site.baseurl }}>Lab</a></li>
-          <!--<li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>-->
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Experience</a></li>
+          {% if page.nav_base %}
+          {%- comment -%} Backup page: link within itself. {%- endcomment -%}
+          <li class="navbar-item"><a class="navbar-link" href="{{ page.nav_base }}#bio">Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ page.nav_base }}#publications">Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ page.nav_base }}#lab">Lab</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ page.nav_base }}#resume">Experience</a></li>
+          {% else %}
+          {%- comment -%} Project pages: send visitors to the current homepage. {%- endcomment -%}
+          <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/#bio">Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/#lab">Lab</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/#policy">Policy</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/#publications">Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="{{ site.baseurl }}/#experience">Experience</a></li>
+          {% endif %}
         </ul>
       </div>
     </nav>

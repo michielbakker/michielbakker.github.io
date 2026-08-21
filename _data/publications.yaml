@@ -95,6 +95,12 @@ papers:
     paper_pdf: "https://doi.org/10.1177/26339137261459441"
     selected: n
 
+  - title: "Europe and the Geopolitics of AGI: The Need for a Preparedness Plan"
+    authors: "Maximilian Negele, Daan Juijn, Afek Shamir, David Janků, Bengüsu Özcan, Lisa Soder, Lucia Velasco, Max Reddel, <b>Michiel Bakker</b>, Lorenzo Pacchiardi, Maksym Andriushchenko"
+    venue: "RAND Corporation, RR-A4636-1. 2025."
+    paper_pdf: "https://www.rand.org/pubs/research_reports/RRA4636-1.html"
+    selected: n
+
   - title: "The Impact of Advanced AI Systems on Democracy"
     authors: "Christopher Summerfield, Lisa P. Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Hélène Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
     venue: "Nature Human Behaviour, 9, 2420–2430. 2025."

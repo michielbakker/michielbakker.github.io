@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.data.main_info.name }} — Assistant Professor, MIT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include seo.html %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/libs/icon.png">
+  <style>
+    :root {
+      --bg: #f4f7f6; --panel: #e7edec; --ink: #16233b; --soft: #46556e;
+      --faint: #6f7d90; --rule: #ccd6d4;
+      --accent: #1a5fd4; --accent-soft: #e3ebfb; --link: #1a5fd4;
+      --radius: 12px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111a26; --panel: #1a2532; --ink: #e8edf2; --soft: #9fb0c4;
+        --faint: #78899d; --rule: #2b3b4d;
+        --accent: #7aa7f5; --accent-soft: #1b2b44; --link: #7aa7f5;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px; line-height: 1.65;
+      -webkit-font-smoothing: antialiased; font-feature-settings: "cv05", "ss01";
+    }
+    .wrap { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+    /* ---------- header ---------- */
+    header { padding: 3.5rem 0 2.5rem; }
+    .id { display: flex; gap: 2rem; align-items: center; }
+    .id img {
+      width: 168px; height: auto; flex: none; display: block;
+      aspect-ratio: 700 / 805; object-fit: cover;
+    }
+    .id h1 { margin: 0 0 .5rem; font-size: 2.6rem; font-weight: 800; letter-spacing: -.035em; line-height: 1.05; }
+    .id .role { margin: 0; color: var(--soft); font-size: 1.02rem; }
+    .id .mail { margin: .55rem 0 0; color: var(--faint); font-size: .92rem; }
+    .social { margin-top: 1.1rem; display: flex; flex-wrap: wrap; gap: .55rem; }
+    .social a {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 2.2rem; height: 2.2rem; color: var(--soft);
+      border: 1px solid var(--rule); border-radius: 50%;
+      transition: color .15s ease, border-color .15s ease, background-color .15s ease;
+    }
+    .social a:hover { color: var(--link); border-color: var(--accent); background: var(--accent-soft); }
+    .social svg { width: 1.02rem; height: 1.02rem; fill: currentColor; display: block; }
+
+    /* ---------- sticky nav ---------- */
+    nav {
+      position: sticky; top: 0; z-index: 20;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: saturate(180%) blur(12px);
+      border-bottom: 2px solid var(--ink);
+    }
+    nav ul { display: flex; gap: .9rem; list-style: none; margin: 0; padding: 0; overflow-x: auto; }
+    nav a {
+      display: inline-block; margin: .85rem .5rem; padding-bottom: 2px;
+      font-size: .95rem; font-weight: 700; letter-spacing: -.01em;
+      color: var(--ink); white-space: nowrap;
+      border-bottom: 2px solid var(--accent);
+      transition: color .15s ease, border-color .15s ease;
+    }
+    nav a:hover, nav a.on { color: var(--accent); text-decoration: none; }
+
+    /* ---------- sections ---------- */
+    section { padding: 2.75rem 0 .5rem; border-top: 2px solid var(--ink); }
+    section:first-of-type { border-top: 0; }
+    section > h2 {
+      margin: 0 0 1.5rem; font-size: 1.55rem; font-weight: 800; letter-spacing: -.03em;
+    }
+    section p { margin: 0 0 1rem; }
+
+    /* ---------- tabs ---------- */
+    .tabs { display: inline-flex; gap: .25rem; background: var(--panel); border-radius: 999px; padding: .25rem; margin-bottom: 1.75rem; }
+    .tabs button {
+      font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer;
+      border: 0; background: transparent; color: var(--soft);
+      padding: .4rem 1.1rem; border-radius: 999px; transition: all .15s ease;
+    }
+    .tabs button[aria-selected="true"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+    .pane[hidden] { display: none; }
+
+    /* ---------- publications ---------- */
+    .pub { padding: .95rem 0; border-bottom: 1px solid var(--rule); }
+    .pub:last-child { border-bottom: 0; }
+    .pub .t { font-weight: 600; letter-spacing: -.01em; line-height: 1.45; }
+    .pub .a { color: var(--soft); font-size: .89rem; line-height: 1.5; margin-top: .15rem; }
+    .pub .v { color: var(--faint); font-size: .85rem; margin-top: .1rem; }
+    .note { color: var(--faint); font-size: .87rem; margin-top: 1.25rem; }
+    .note.lead { margin: -.4rem 0 1.6rem; }
+
+    /* ---------- lab ---------- */
+    .group { margin-bottom: 1.5rem; }
+    .group .label {
+      font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--faint); margin-bottom: .35rem;
+    }
+    .group .people { line-height: 1.9; }
+    .group .co { color: var(--faint); font-size: .89rem; }
+
+    /* ---------- timeline ---------- */
+    .timeline { position: relative; padding-left: 1.9rem; }
+    .timeline::before {
+      content: ""; position: absolute; left: .32rem; top: .5rem; bottom: 1.4rem; width: 1.5px;
+      background: linear-gradient(to bottom, var(--rule) 0%, var(--rule) 82%, transparent 100%);
+    }
+    .tl { position: relative; padding-bottom: 1.6rem; }
+    .tl::before {
+      content: ""; position: absolute; left: -1.75rem; top: .45rem;
+      width: 10px; height: 10px; border-radius: 50%;
+      background: var(--bg); border: 2px solid var(--accent);
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .tl.school::before { border-color: var(--faint); }
+    .tl:hover::before { transform: scale(1.35); box-shadow: 0 0 0 4px var(--accent-soft); }
+    .tl .when {
+      font-size: .73rem; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--faint); font-variant-numeric: tabular-nums;
+    }
+    .tl .what { margin-top: .1rem; font-weight: 600; letter-spacing: -.01em; }
+    .tl .what .where { color: var(--link); font-weight: 500; }
+    .tl .sub { color: var(--soft); font-size: .89rem; line-height: 1.5; }
+
+    footer { margin-top: 3rem; padding: 1.75rem 0 3rem; border-top: 2px solid var(--ink); color: var(--faint); font-size: .85rem; }
+    footer a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 2px; }
+    footer a:hover { color: var(--link); text-decoration-color: currentColor; }
+
+    @media (max-width: 40rem) {
+      .id { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+      .id img { width: 132px; }
+      .id h1 { font-size: 1.8rem; }
+      section { padding-top: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="id">
+        <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic_alt }}" alt="{{ site.data.main_info.name }}" width="700" height="805">
+        <div>
+          <h1>{{ site.data.main_info.name }}</h1>
+          <p class="role">{{ site.data.main_info.title }}</p>
+          <p class="mail">{{ site.data.main_info.email }}</p>
+          <div class="social">
+            <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5s-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            </a>
+            <a href="{{ site.data.main_info.bsky }}" target="_blank" rel="noopener" aria-label="Bluesky" title="Bluesky">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.296 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+            </a>
+            <a href="{{ site.data.main_info.twitter }}" target="_blank" rel="noopener" aria-label="X" title="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.153h7.594l5.243 6.932zM17.61 20.644h2.039L6.486 3.24H4.298z"/></svg>
+            </a>
+            <a href="{{ site.data.main_info.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <nav>
+    <div class="wrap">
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#lab">Lab</a></li>
+        <li><a href="#policy">Policy</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    {{ content }}
+    <footer>
+      {{ site.data.main_info.name }} &middot; {{ site.data.main_info.email }}
+      {%- if site.data.main_info.photo_credit %} &middot; Photo by
+        <a href="{{ site.data.main_info.photo_credit_url }}" target="_blank" rel="noopener">{{ site.data.main_info.photo_credit }}</a>
+      {%- endif %}
+    </footer>
+  </div>
+
+  <script>
+    // Publication tabs.
+    document.querySelectorAll('.tabs').forEach(function (tabs) {
+      tabs.addEventListener('click', function (e) {
+        var btn = e.target.closest('button'); if (!btn) return;
+        tabs.querySelectorAll('button').forEach(function (b) {
+          var on = b === btn;
+          b.setAttribute('aria-selected', on);
+          document.getElementById(b.dataset.pane).hidden = !on;
+        });
+      });
+    });
+    // Highlight the section currently in view.
+    var links = [].slice.call(document.querySelectorAll('nav a'));
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        links.forEach(function (l) { l.classList.toggle('on', l.getAttribute('href') === '#' + en.target.id); });
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    document.querySelectorAll('section[id]').forEach(function (s) { obs.observe(s); });
+  </script>
+
+  <!-- Google Analytics -->
+  {% include google_analytics.html %}
+</body>
+</html>
