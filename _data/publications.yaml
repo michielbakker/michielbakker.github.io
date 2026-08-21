@@ -11,10 +11,10 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2607.22305"
     selected: y
 
-  - title: "Robust AI Personalization Controls: The Human Context Protocol"
+  - title: "Position: Robust AI Personalization Will Require a Human Context Protocol"
     authors: "Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, Jiaxin Pei, Andrew Trask, E. Glen Weyl, <b>Michiel A. Bakker</b>"
-    venue: "Forty-third International Conference on Machine Learning (ICML). 2026."
-    paper_pdf: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5403981"
+    venue: "ICML'26: Forty-third International Conference on Machine Learning, Position Paper Track. 2026."
+    paper_pdf: "https://openreview.net/forum?id=LlmwZMI22F"
     selected: y
 
   - title: "Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce"
