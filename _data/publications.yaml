@@ -30,19 +30,19 @@ papers:
     selected: y
 
   - title: "AI and Collective Decisions: Strengthening Legitimacy and Losers' Consent"
-    authors: "Shravya Fulay, Pranav Ravi, Emily Kubin, Sohan Mohanty, <b>Michiel A. Bakker</b>, Deb Roy"
+    authors: "Suyash Fulay, Prerna Ravi, Emily Kubin, Shrestha Mohanty, <b>Michiel A. Bakker</b>, Deb Roy"
     venue: "arXiv preprint. 2026."
     paper_pdf: "https://arxiv.org/abs/2604.05368"
     selected: n
 
   - title: "Multi-User Large Language Model Agents"
-    authors: "Sherry Yang, Siyu Zhu, Hancheng Zhu, José Rafael Enríquez, David Wang, Alex Pentland, <b>Michiel A. Bakker</b>, ..."
+    authors: "Shu Yang, Shenzhe Zhu, Hao Zhu, José Ramón Enríquez, Di Wang, Alex Pentland, <b>Michiel A. Bakker</b>, Jiaxin Pei"
     venue: "arXiv preprint. 2026."
     paper_pdf: "https://arxiv.org/abs/2604.08567"
     selected: n
 
   - title: "AI Assistance Reduces Persistence and Hurts Independent Performance"
-    authors: "Grace Liu, Brian Christian, Talia Dumbalska, <b>Michiel A. Bakker</b>, Rahul Dubey"
+    authors: "Grace Liu, Brian Christian, Tsvetomira Dumbalska, <b>Michiel A. Bakker</b>, Rachit Dubey"
     venue: "arXiv preprint. 2026."
     paper_pdf: "https://arxiv.org/abs/2604.04721"
     selected: y
@@ -66,9 +66,9 @@ papers:
     selected: n
 
   - title: "Agora: Teaching the Skill of Consensus-Finding with AI Personas Grounded in Human Voice"
-    authors: "Shravya Pradeep Fulay, Pranav Ravi, Ojas Gokhale, Emily Yi, <b>Michiel A. Bakker</b>, Deb Roy"
+    authors: "Prerna Ravi, Om Gokhale, Suyash Fulay, Eugene Yi, Deb Roy, <b>Michiel A. Bakker</b>"
     venue: "CHI EA'26: Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems. 2026."
-    paper_pdf: ""
+    paper_pdf: "https://arxiv.org/abs/2603.07339"
     selected: n
 
   - title: "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLMs"
@@ -108,7 +108,7 @@ papers:
     selected: y
 
   - title: "Can AI Truly Represent Your Voice in Deliberations? A Comprehensive Study of Large-Scale Opinion Aggregation with LLMs"
-    authors: "Siyu Zhu, Sherry Yang, <b>Michiel A. Bakker</b>, Alex Pentland, Jiaxin Pei"
+    authors: "Shenzhe Zhu, Shu Yang, <b>Michiel A. Bakker</b>, Alex Pentland, Jiaxin Pei"
     venue: "arXiv preprint. 2025."
     paper_pdf: "https://arxiv.org/abs/2510.05154"
     selected: n
