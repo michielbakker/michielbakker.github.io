@@ -30,6 +30,13 @@ members:
       - name: "Deb Roy"
         url: "https://www.media.mit.edu/people/dkroy/overview/"
 
+  - name: "Robin Na"
+    group: "PhD Students"
+    url: "https://robin-na.github.io/"
+    coadvisors:
+      - name: "Abdullah Almaatouq"
+        url: "https://mitsloan.mit.edu/faculty/directory/abdullah-almaatouq"
+
   - name: "Sulekha Kishore"
     group: "PhD Students"
     url: "https://idss.mit.edu/staff/sulekha-kishore/"
