@@ -25,6 +25,7 @@ title: Home
         <div class="people">
           {% for member in members %}
             {% if member.url and member.url != "" %}<a href="{{ member.url }}" target="_blank" rel="noopener">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
+            {%- if member.note and member.note != "" %}<span class="co"> ({{ member.note }})</span>{%- endif %}
             {%- if member.coadvisors and member.coadvisors.size > 0 %}<span class="co"> (co-advised with
               {%- for coadvisor in member.coadvisors -%}
                 {%- unless forloop.first %}{% if forloop.last %} and{% else %},{% endif %}{% endunless %}

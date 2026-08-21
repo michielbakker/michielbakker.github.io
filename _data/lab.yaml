@@ -1,6 +1,7 @@
 # `group` sections the lab listing on the homepage.
 # `url` turns the name into a link; leave "" for plain text.
 # `coadvisors` is optional and renders as "(co-advised with ...)".
+# `note` is optional and renders in parentheses after the name, e.g. "(incoming)".
 members:
   - name: "Joshua Yang"
     group: "Postdocs"
@@ -9,6 +10,7 @@ members:
   - name: "Luke Thorburn"
     group: "Postdocs"
     url: "https://lukethorburn.com/"
+    note: "incoming"
 
   - name: "Elinor Poole-Dayan"
     group: "PhD Students"
