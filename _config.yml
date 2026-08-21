@@ -7,4 +7,9 @@ url: "https://miba.dev"
 
 collections:
   projects:
-    output: true
+    # Inherited from the template these pages came with; they describe
+    # someone else's projects, so they are not published.
+    output: false
+
+plugins:
+  - jekyll-sitemap
