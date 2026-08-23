@@ -1,0 +1,7 @@
+{%- assign _s = include.exp.start | split: "-" -%}
+{%- if include.exp.end == "present" -%}
+{{ _s[0] }} &ndash; present
+{%- else -%}
+{%- assign _e = include.exp.end | split: "-" -%}
+{%- if _e[0] == _s[0] -%}{{ _s[0] }}{%- else -%}{{ _s[0] }} &ndash; {{ _e[0] }}{%- endif -%}
+{%- endif -%}

@@ -1,0 +1,68 @@
+{%- comment -%}
+  Gantt timeline. Bars are positioned from the start/end months in _data/experience.yaml
+  on a shared axis running from Jan 2008 to Jan of next year.
+{%- endcomment -%}
+{%- assign now_y = site.time | date: "%Y" | plus: 0 -%}
+{%- assign now_m = site.time | date: "%m" | plus: 0 -%}
+{%- assign AX0 = 24096 -%}
+{%- assign AX1 = now_y | plus: 1 | times: 12 -%}
+{%- assign TOT = AX1 | minus: AX0 -%}
+{%- assign now_i = now_y | times: 12 | plus: now_m | minus: 1 | minus: AX0 -%}
+{%- assign degrees = site.data.experience.experiences | where: "category", "school" -%}
+{%- assign roles = site.data.experience.experiences | where: "category", "work" -%}
+{%- assign rows = degrees | concat: roles -%}
+
+<div class="gantt">
+  <div class="gantt-grid" aria-hidden="true">
+    {%- for i in (0..15) -%}
+      {%- assign gy = i | times: 2 | plus: 2008 -%}
+      {%- if gy <= now_y -%}
+        {%- assign gl = gy | times: 12 | minus: AX0 | times: 100.0 | divided_by: TOT | round: 3 -%}
+        {%- assign odd = i | modulo: 2 -%}
+        <span class="gantt-line{% if odd == 0 %} alt{% endif %}" style="left:{{ gl }}%"></span>
+        <span class="gantt-year{% if odd == 0 %} alt{% endif %}" style="left:{{ gl }}%">{{ gy }}</span>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  {% for exp in rows %}
+    {%- assign s = exp.start | split: "-" -%}
+    {%- assign sy = s[0] | plus: 0 -%}
+    {%- assign sm = s[1] | plus: 0 -%}
+    {%- assign si = sy | times: 12 | plus: sm | minus: 1 | minus: AX0 -%}
+    {%- if exp.end == "present" -%}
+      {%- assign ei = now_i -%}
+    {%- else -%}
+      {%- assign e = exp.end | split: "-" -%}
+      {%- assign ey = e[0] | plus: 0 -%}
+      {%- assign em = e[1] | plus: 0 -%}
+      {%- assign ei = ey | times: 12 | plus: em | minus: 1 | minus: AX0 -%}
+    {%- endif -%}
+    {%- capture range %}{% include exp_range.html exp=exp %}{% endcapture -%}
+    {%- capture tip %}{{ exp.title }} &middot; {{ exp.place }} &middot; {{ range | strip }}{% endcapture -%}
+    <div class="gantt-lab {{ exp.category }}">
+      <div class="t">{{ exp.title }}</div>
+      <div class="p">{{ exp.place }} <span class="d">&middot; {{ range }}</span></div>
+      {%- if exp.subtitle %}<div class="s">{{ exp.subtitle }}</div>{% endif -%}
+    </div>
+    <div class="gantt-track">
+      {%- if exp.break_start -%}
+        {%- comment -%} a leave of absence: two bars with a gap between them {%- endcomment -%}
+        {%- assign k = exp.break_start | split: "-" -%}
+        {%- assign ki = k[0] | plus: 0 | times: 12 | plus: k[1] | minus: 1 | minus: AX0 -%}
+        {%- assign r = exp.break_end | split: "-" -%}
+        {%- assign ri = r[0] | plus: 0 | times: 12 | plus: r[1] | minus: 1 | minus: AX0 -%}
+        {%- assign l1 = si | times: 100.0 | divided_by: TOT | round: 3 -%}
+        {%- assign w1 = ki | minus: si | times: 100.0 | divided_by: TOT | round: 3 -%}
+        {%- assign l2 = ri | times: 100.0 | divided_by: TOT | round: 3 -%}
+        {%- assign w2 = ei | minus: ri | times: 100.0 | divided_by: TOT | round: 3 -%}
+        <span class="gantt-bar {{ exp.category }}" style="left:{{ l1 }}%;width:{{ w1 }}%" title="{{ tip }}"></span>
+        <span class="gantt-bar {{ exp.category }}" style="left:{{ l2 }}%;width:{{ w2 }}%" title="{{ tip }}"></span>
+      {%- else -%}
+        {%- assign bl = si | times: 100.0 | divided_by: TOT | round: 3 -%}
+        {%- assign bw = ei | minus: si | times: 100.0 | divided_by: TOT | round: 3 -%}
+        <span class="gantt-bar {{ exp.category }}" style="left:{{ bl }}%;width:{{ bw }}%" title="{{ tip }}"></span>
+      {%- endif -%}
+    </div>
+  {% endfor %}
+</div>

@@ -67,15 +67,7 @@ title: Home
 
 <section id="experience">
   <h2>Experience</h2>
-  <div class="timeline">
-    {% for exp in site.data.experience.experiences %}
-      <div class="tl {{ exp.category }}">
-        <div class="when">{{ exp.time }}</div>
-        <div class="what">{{ exp.title }} <span class="where">&middot; {{ exp.place }}</span></div>
-        <div class="sub">{{ exp.subtitle }}</div>
-      </div>
-    {% endfor %}
-  </div>
+  {% include timeline.html %}
 </section>
 
 <section id="design">

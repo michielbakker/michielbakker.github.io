@@ -232,9 +232,9 @@ nav_base: "/old/"
       {% endif %}
         <div class="flag-wrapper">
           <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+          <span class="time-wrapper"><span class="time">{% include exp_range.html exp=exp %}</span></span>
         </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+        <div class="desc"><b>{{ exp.title }}</b>{% if exp.subtitle %} <br/> {{ exp.subtitle }}{% endif %}</div>
       </div>
     </li>
     {% endfor %}
