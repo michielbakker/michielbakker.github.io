@@ -1,9 +1,14 @@
-# Compares _data/publications.yaml against arXiv and Crossref and opens an issue
-# when an entry disagrees with its source of record.
+# Compares _data/publications.yaml against arXiv and Crossref and reports
+# entries that disagree with their source of record.
 #
 # This exists because a batch of entries once went live with invented author
 # given names (real surnames, wrong first names) and stayed up for months --
 # the kind of error that is invisible on the page but obvious against the API.
+#
+# The full report always lands in the run's job summary. Issues are currently
+# disabled on this repository, so the run is failed to raise the alarm (GitHub
+# emails the owner on a failed scheduled run). If Issues are ever enabled, the
+# report step files and updates a single issue instead, and stops failing.
 name: Check publications for drift
 
 on:
@@ -24,6 +29,9 @@ concurrency:
   group: check-publications
   cancel-in-progress: true
 
+env:
+  ISSUE_TITLE: "Publication metadata drift"
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -43,49 +51,58 @@ jobs:
           ARGS=""
           if [ "${{ inputs.skip_links }}" = "true" ]; then ARGS="--skip-links"; fi
           python scripts/check_publications.py $ARGS | tee report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
           # the script exits 0 without --strict; decide from the report itself
-          if grep -q "^No drift found." report.md; then
+          if grep -q "^No drift found\." report.md; then
             echo "clean=true" >> "$GITHUB_OUTPUT"
           else
             echo "clean=false" >> "$GITHUB_OUTPUT"
           fi
-          cat report.md >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Open or update the issue
+      - name: Report drift
         if: steps.check.outputs.clean == 'false'
         env:
           GH_TOKEN: ${{ github.token }}
-          TITLE: "Publication metadata drift"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           {
-            echo "The weekly check found entries in \`_data/publications.yaml\` that"
-            echo "disagree with arXiv or Crossref, or whose links no longer resolve."
+            echo "Entries in \`_data/publications.yaml\` disagree with arXiv or"
+            echo "Crossref, or their links no longer resolve."
             echo
             cat report.md
             echo
-            echo "_From [this run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})._"
+            echo "_From [this run]($RUN_URL)._"
           } > body.md
 
-          EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
-                       --json number,title \
-                       --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+          if ! gh issue list --state open --limit 1 >/dev/null 2>&1; then
+            echo "::error::Publication metadata drift found - see the job summary."
+            echo "(Issues are disabled on this repository, so this run is failed instead."
+            echo " Enable Issues to have the report filed as one instead of a red X.)"
+            exit 1
+          fi
 
+          EXISTING=$(gh issue list --state open --search "$ISSUE_TITLE in:title" \
+                       --json number,title \
+                       --jq "map(select(.title == \"$ISSUE_TITLE\")) | .[0].number // empty")
           if [ -n "$EXISTING" ]; then
             gh issue edit "$EXISTING" --body-file body.md
             echo "Updated issue #$EXISTING"
           else
-            gh issue create --title "$TITLE" --body-file body.md
+            gh issue create --title "$ISSUE_TITLE" --body-file body.md
           fi
 
       - name: Close the issue when everything is clean
         if: steps.check.outputs.clean == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          TITLE: "Publication metadata drift"
         run: |
-          EXISTING=$(gh issue list --state open --search "$TITLE in:title" \
+          if ! gh issue list --state open --limit 1 >/dev/null 2>&1; then
+            echo "Issues are disabled on this repository; nothing to close."
+            exit 0
+          fi
+          EXISTING=$(gh issue list --state open --search "$ISSUE_TITLE in:title" \
                        --json number,title \
-                       --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+                       --jq "map(select(.title == \"$ISSUE_TITLE\")) | .[0].number // empty")
           if [ -n "$EXISTING" ]; then
             gh issue close "$EXISTING" --comment "No drift found on the latest run."
           fi
