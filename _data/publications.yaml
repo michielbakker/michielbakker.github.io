@@ -95,6 +95,12 @@ papers:
     paper_pdf: "https://doi.org/10.1177/26339137261459441"
     selected: n
 
+  - title: "Tell Me Why: Incentivizing Explanations"
+    authors: "Siddarth Srinivasan, Ezra Karger, <b>Michiel Bakker</b>, Yiling Chen"
+    venue: "EC'26: Proceedings of the 27th ACM Conference on Economics and Computation. 2026."
+    paper_pdf: "https://arxiv.org/abs/2502.13410"
+    selected: y
+
   - title: "Europe and the Geopolitics of AGI: The Need for a Preparedness Plan"
     authors: "Maximilian Negele, Daan Juijn, Afek Shamir, David Janků, Bengüsu Özcan, Lisa Soder, Lucia Velasco, Max Reddel, <b>Michiel Bakker</b>, Lorenzo Pacchiardi, Maksym Andriushchenko"
     venue: "RAND Corporation, RR-A4636-1. 2025."
@@ -147,12 +153,6 @@ papers:
     authors: "Andrew Konya, Luke Thorburn, Wasim Almasri, Oded Adomi Leshem, Ariel D. Procaccia, Lisa Schirch, <b>Michiel A. Bakker</b>"
     venue: "FAccT'25: Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency. 2025."
     paper_pdf: "https://arxiv.org/abs/2503.01769"
-    selected: y
-
-  - title: "Tell Me Why: Incentivizing Explanations"
-    authors: "Siddarth Srinivasan, Ezra Karger, <b>Michiel Bakker</b>, Yiling Chen"
-    venue: "arXiv preprint. 2025."
-    paper_pdf: "https://arxiv.org/abs/2502.13410"
     selected: y
 
   - title: "Perceptual Interventions Ameliorate Statistical Discrimination in Learning Agents"
