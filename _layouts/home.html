@@ -181,6 +181,9 @@
       {{ site.data.main_info.name }} &middot; {{ site.data.main_info.email }}
       {%- if site.data.main_info.photo_credit %} &middot; Photo by
         <a href="{{ site.data.main_info.photo_credit_url }}" target="_blank" rel="noopener">{{ site.data.main_info.photo_credit }}</a>
+        {%- if site.data.main_info.photo_credit_outlet %} for
+          <a href="{{ site.data.main_info.photo_credit_outlet_url }}" target="_blank" rel="noopener">{{ site.data.main_info.photo_credit_outlet }}</a>
+        {%- endif %}
       {%- endif %}
     </footer>
   </div>
