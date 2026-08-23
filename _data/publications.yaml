@@ -307,13 +307,6 @@ papers:
     paper_pdf: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.031045"
     selected: n
 
-  - title: "Measuring fine-grained multidimensional integration using mobile phone metadata: the case of Syrian refugees in Turkey"
-    authors: "<b>Michiel A. Bakker</b>, Daoud A. Piracha, Patricia J. Lu, Keis Bejgo, Mohsen Bahrami, Yan Leng, Jose Balsa-Barreiro, Julie Ricard, Alfredo J. Morales, Vivek K. Singh, Burcin Bozkaya, Selim Balcisoy, Alex Pentland"
-    venue: "Guide to Mobile Data Analytics in Refugee Scenarios, Springer. 2019."
-    year: 2019
-    paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-030-12554-7_7"
-    selected: n
-
   - title: "DADI: Dynamic Discovery of Fair Information with Adversarial Reinforcement Learning"
     authors: "<b>Michiel A. Bakker</b>, Duy Patrick Tu, Humberto Riverón Valdés, Krishna P. Gummadi, Kush R. Varshney, Adrian Weller, Alex Pentland"
     venue: "NeurIPS Workshop on Human-Centric Machine Learning. 2019."
