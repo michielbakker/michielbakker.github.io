@@ -109,7 +109,7 @@ papers:
 
   - title: "The Impact of Advanced AI Systems on Democracy"
     authors: "Christopher Summerfield, Lisa P. Argyle, <b>Michiel A. Bakker</b>, Teddy Collins, Esin Durmus, Tyna Eloundou, Iason Gabriel, Deep Ganguli, Kobi Hackenburg, Gillian Hadfield, Luke Hewitt, Saffron Huang, Hélène Landemore, Nahema Marchal, Aviv Ovadya, Ariel Procaccia, Mathias Risse, Bruce Schneier, Elizabeth Seger, Divya Siddarth, Henrik Skaug Sætra, Michael Henry Tessler, Matthew Botvinick"
-    venue: "Nature Human Behaviour, 9, 2420–2430. 2025."
+    venue: "Nature Human Behaviour, 9(12), 2420–2430. 2025."
     paper_pdf: "https://www.nature.com/articles/s41562-025-02309-z"
     selected: y
 
@@ -175,13 +175,13 @@ papers:
 
   - title: "AI can help humans find common ground in democratic deliberation"
     authors: "Michael Henry Tessler<sup>‡</sup>, <b>Michiel A. Bakker<sup>‡</sup></b>, Daniel Jarrett, Hannah Sheahan, Martin J. Chadwick, Raphael Koster, Georgina Evans, Lucy Campbell-Gillingham, Tantum Collins, David C. Parkes, Matthew Botvinick, Christopher Summerfield"
-    venue: "Science. 2024."
+    venue: "Science, 386(6719), eadq2852. 2024."
     paper_pdf: "https://www.science.org/stoken/author-tokens/ST-2196/full"
     selected: y
 
   - title: "How large language models can reshape collective intelligence"
     authors: "Jason W. Burton, Ezequiel Lopez-Lopez, Shahar Hechtlinger, Zoe Rahwan, Samuel Aeschbach, <b>Michiel A. Bakker</b>, Joshua A. Becker, Aleks Berditchevskaia, Julian Berger, Levin Brinkmann, Lucie Flek, Stefan M. Herzog, Saffron Huang, Sayash Kapoor, Arvind Narayanan, Anne-Marie Nussberger, Taha Yasseri, Pietro Nickl, Abdullah Almaatouq, Ulrike Hahn, Ralf H. J. M. Kurvers, Susan Leavy, Iyad Rahwan, Divya Siddarth, Alice Siu, Anita W. Woolley, Dirk U. Wulff, Ralph Hertwig"
-    venue: "Nature Human Behaviour. 2024."
+    venue: "Nature Human Behaviour, 8(9), 1643–1655. 2024."
     paper_pdf: "https://www.nature.com/articles/s41562-024-01959-9"
     selected: y
 
@@ -193,7 +193,7 @@ papers:
 
   - title: "Scaffolding cooperation in human groups with deep reinforcement learning"
     authors: "Kevin R. McKee, Andrea Tacchetti, <b>Michiel A. Bakker</b>, Jan Balaguer, Lucy Campbell-Gillingham, Richard Everett, Matthew M. Botvinick"
-    venue: "Nature Human Behaviour. 2023."
+    venue: "Nature Human Behaviour, 7(10), 1787–1796. 2023."
     paper_pdf: "https://psyarxiv.com/cr58a"
     selected: y
 
@@ -205,7 +205,7 @@ papers:
 
   - title: "Quantifying the importance and location of SARS-CoV-2 transmission events in large metropolitan areas"
     authors: "Alberto Aleta, David Martín-Corral, <b>Michiel A. Bakker</b>, Ana Pastore y Piontti, Marco Ajelli, Maria Litvinova, Matteo Chinazzi, Natalie E. Dean, M. Elizabeth Halloran, Ira M. Longini Jr, Alex Pentland, Alessandro Vespignani, Yamir Moreno, Esteban Moro"
-    venue: "Proceedings of the National Academy of Sciences (PNAS). 2022."
+    venue: "Proceedings of the National Academy of Sciences (PNAS), 119(26), e2112182119. 2022."
     paper_pdf: "https://www.pnas.org/doi/10.1073/pnas.2112182119"
     selected: n
 
@@ -253,13 +253,13 @@ papers:
 
   - title: "Atomic-scale imaging of a 27-nuclear-spin cluster using a quantum sensor"
     authors: "Mohamed H. Abobeih, Joe Randall, Conor E. Bradley, Hans P. Bartling, <b>Michiel A. Bakker</b>, Maarten J. Degen, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
-    venue: "Nature. 2019."
+    venue: "Nature, 576(7787), 411–415. 2019."
     paper_pdf: "https://www.nature.com/articles/s41586-019-1834-7"
     selected: n
 
   - title: "A Ten-Qubit Solid-State Spin Register with Quantum Memory up to One Minute"
     authors: "Conor E. Bradley, Joe Randall, Mohamed H. Abobeih, Remon C. Berrevoets, Maarten J. Degen, <b>Michiel A. Bakker</b>, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
-    venue: "Physical Review X. 2019."
+    venue: "Physical Review X, 9(3), 031045. 2019."
     paper_pdf: "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.031045"
     selected: n
 
@@ -289,7 +289,7 @@ papers:
 
   - title: "One-second coherence for a single electron spin coupled to a multi-qubit nuclear-spin environment"
     authors: "Mohamed H. Abobeih, Julia Cramer, <b>Michiel A. Bakker</b>, Norbert Kalb, Matthew Markham, Daniel J. Twitchen, Tim H. Taminiau"
-    venue: "Nature Communications. 2018."
+    venue: "Nature Communications, 9(1), 2552. 2018."
     paper_pdf: "https://www.nature.com/articles/s41467-018-04916-z"
     selected: n
 
@@ -301,12 +301,12 @@ papers:
 
   - title: "Validity of the single-particle description and charge noise resilience for multielectron quantum dots"
     authors: "<b>Michiel A. Bakker<sup>‡</sup></b>, Sebastian Mehl<sup>‡</sup>, Tuukka Hiltunen, Ari Harju, David P. DiVincenzo"
-    venue: "Physical Review B. 2015."
+    venue: "Physical Review B, 91(15), 155425. 2015."
     paper_pdf: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.91.155425"
     selected: n
 
   - title: "The Tipsy Single Soft Photon Detector and the Trixy Ultrafast Tracking Detector"
     authors: "Harry van der Graaf, <b>Michiel A. Bakker</b>, Hong W. Chan, Edoardo Charbon, Fabio Santagata, Pasqualina M. Sarro, Dennis R. Schaart"
-    venue: "Journal of Instrumentation. 2013."
+    venue: "Journal of Instrumentation, 8(01), C01036. 2013."
     paper_pdf: "http://iopscience.iop.org/article/10.1088/1748-0221/8/01/C01036/meta"
     selected: n
