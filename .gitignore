@@ -2,4 +2,5 @@
 */.DS_Store
 .jekyll-cache
 _site/*
-_snap_md5.txt
+_snap_md5.txt__pycache__/
+*.pyc

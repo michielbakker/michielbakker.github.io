@@ -14,8 +14,3 @@ defaults:
       path: "assets"
     values:
       sitemap: false
-  # Vendored third-party libraries.
-  - scope:
-      path: "libs"
-    values:
-      sitemap: false

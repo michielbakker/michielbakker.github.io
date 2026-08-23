@@ -62,7 +62,19 @@ title: Home
   <p class="note lead">Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>.<br/>
   <sup>&Dagger;</sup> indicates equal contribution.</p>
 
-  {% for paper in site.data.publications.papers %}{% include paper_card.html paper=paper %}{% endfor %}
+  {%- assign papers = site.data.publications.papers -%}
+  {%- assign years = papers | map: "year" | uniq -%}
+  {% for y in years %}
+    {%- assign in_year = papers | where: "year", y -%}
+    {%- assign shown = 0 -%}
+    {%- for paper in in_year %}{% if paper.paper_pdf and paper.paper_pdf != "" %}{% assign shown = shown | plus: 1 %}{% endif %}{% endfor -%}
+    {% if shown > 0 %}
+      <div class="pub-group">
+        <h3 class="pub-year">{{ y }}</h3>
+        {% for paper in in_year %}{% include paper_card.html paper=paper %}{% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
 </section>
 
 <section id="experience">
@@ -72,7 +84,9 @@ title: Home
 
 <section id="design">
   <h2>Website Design</h2>
-  <p>Based on the homepage of my <a href="https://arxiv.org/pdf/2411.06116" target="_blank" rel="noopener">collaborator</a> (and friend!)
-  <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener">Martin Saveski</a> and my friend
-  <a href="https://jacquescarolan.github.io/" target="_blank" rel="noopener">Jacques Carolan</a>.</p>
+  <p>Based on the homepages of
+  <a href="https://faculty.washington.edu/msaveski/" target="_blank" rel="noopener">Martin Saveski</a> and
+  <a href="https://jacquescarolan.github.io/" target="_blank" rel="noopener">Jacques Carolan</a>.
+  Photo is by <a href="{{ site.data.main_info.photo_credit_url }}" target="_blank" rel="noopener">{{ site.data.main_info.photo_credit }}</a>
+  for <a href="{{ site.data.main_info.photo_credit_outlet_url }}" target="_blank" rel="noopener">the {{ site.data.main_info.photo_credit_outlet }}</a>.</p>
 </section>
