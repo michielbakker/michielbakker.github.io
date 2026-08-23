@@ -1,7 +1,6 @@
 name: "Michiel Bakker"
 title: "Assistant Professor, Massachusetts Institute of Technology"
 email: "[last name]@mit.edu"
-profile_pic: "/assets/profile-pics/michiel.jpg"
 profile_pic_alt: "/assets/profile-pics/michiel-2026.jpg"
 description: "Michiel Bakker is an Assistant Professor at MIT working on large language models, AI safety, AI governance, and the societal impacts of AI."
 og_image: "/assets/og-card.png"
@@ -13,4 +12,3 @@ bsky: "https://bsky.app/profile/mbakker.bsky.social"
 twitter: "https://x.com/bakkermichiel"
 linkedin: "https://www.linkedin.com/in/michielbakker1/"
 google_scholar: "https://scholar.google.com/citations?user=9H74p5MAAAAJ"
-google_analytics_tracking_id: 'G-PEJ2CJBMYP'

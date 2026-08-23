@@ -31,7 +31,7 @@
 
     :root {
       --bg: #f4f7f6; --panel: #e7edec; --ink: #16233b; --soft: #46556e;
-      --faint: #6f7d90; --rule: #ccd6d4;
+      --faint: #647182; --rule: #ccd6d4;
       --accent: #1a5fd4; --accent-soft: #e3ebfb; --link: #1a5fd4;
       --radius: 12px;
     }
@@ -52,6 +52,12 @@
     }
     .wrap { max-width: 52rem; margin: 0 auto; padding: 0 1.5rem; }
     a { color: var(--link); text-decoration: none; }
+    .skip {
+      position: absolute; left: -9999px; top: 0; z-index: 10;
+      padding: .6rem 1rem; background: var(--ink); color: var(--bg);
+      border-radius: 0 0 var(--radius) 0; font-weight: 600; font-size: .9rem;
+    }
+    .skip:focus { left: 0; text-decoration: none; }
     a:hover { text-decoration: underline; text-underline-offset: 2px; }
 
     /* ---------- header ---------- */
@@ -94,6 +100,10 @@
     /* ---------- sections ---------- */
     section { padding: 2.75rem 0 .5rem; border-top: 2px solid var(--ink); }
     section:first-of-type { border-top: 0; }
+    .vh {
+      position: absolute; width: 1px; height: 1px; overflow: hidden;
+      clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+    }
     section > h2 {
       margin: 0 0 1.5rem; font-size: 1.55rem; font-weight: 800; letter-spacing: -.03em;
     }
@@ -194,10 +204,11 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#bio">Skip to content</a>
   <div class="wrap">
     <header>
       <div class="id">
-        <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic_alt }}" alt="{{ site.data.main_info.name }}" width="700" height="805">
+        <img src="{{ site.baseurl }}{{ site.data.main_info.profile_pic_alt }}" alt="{{ site.data.main_info.name }}" width="700" height="805" fetchpriority="high" decoding="async">
         <div>
           <h1>{{ site.data.main_info.name }}</h1>
           <p class="role">{{ site.data.main_info.title }}</p>
@@ -233,8 +244,12 @@
     </div>
   </nav>
 
+  <main id="content">
+
   <div class="wrap">
     {{ content }}
+  </main>
+
     <footer>
       {{ site.data.main_info.name }} &middot; {{ site.data.main_info.email }}
     </footer>
