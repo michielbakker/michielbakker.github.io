@@ -199,7 +199,10 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .gantt-bar { transition: none; }
+      /* smooth anchor scrolling can trigger vestibular symptoms */
+      html { scroll-behavior: auto; }
+      .gantt-bar, .social a, .tl::before { transition: none; }
+      .gantt-bar:hover { transform: none; }
     }
   </style>
 </head>
