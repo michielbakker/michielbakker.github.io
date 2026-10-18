@@ -1,4 +1,4 @@
-# `group` sections the lab listing on the homepage.
+# `group` sections the lab listing on the homepage; each section is sorted by first name.
 # `url` turns the name into a link; leave "" for plain text.
 # `coadvisors` is optional and renders as "(co-advised with ...)".
 # `note` is optional and renders in parentheses after the name, e.g. "(incoming)".

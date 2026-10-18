@@ -19,7 +19,7 @@ title: Home
   </p>
   {% assign groups = "Postdocs,PhD Students,Masters Students" | split: "," %}
   {% for group in groups %}
-    {% assign members = site.data.lab.members | where: "group", group %}
+    {% assign members = site.data.lab.members | where: "group", group | sort: "name" %}
     {% if members.size > 0 %}
       <div class="group">
         <div class="label">{{ group }}</div>
