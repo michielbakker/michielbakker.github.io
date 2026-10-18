@@ -44,6 +44,13 @@ members:
     group: "PhD Students"
     url: "https://idss.mit.edu/staff/sulekha-kishore/"
 
+  - name: "Hope Schroeder"
+    group: "PhD Students"
+    url: "https://hopeschroeder.com/"
+    coadvisors:
+      - name: "Deb Roy"
+        url: "https://www.media.mit.edu/people/dkroy/overview/"
+
   - name: "Xiaoyang Cao"
     group: "Masters Students"
     url: "https://xiaoyangcao1113.github.io/"
