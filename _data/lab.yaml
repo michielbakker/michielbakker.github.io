@@ -51,6 +51,13 @@ members:
       - name: "Deb Roy"
         url: "https://www.media.mit.edu/people/dkroy/overview/"
 
+  - name: "Zeyuan Li"
+    group: "PhD Students"
+    url: "https://mitsloan.mit.edu/programs/phd/zeyuan-li"
+    coadvisors:
+      - name: "Sinan Aral"
+        url: "https://mitsloan.mit.edu/faculty/directory/sinan-aral"
+
   - name: "Xiaoyang Cao"
     group: "Masters Students"
     url: "https://xiaoyangcao1113.github.io/"
